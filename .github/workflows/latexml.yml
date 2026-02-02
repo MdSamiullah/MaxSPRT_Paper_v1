@@ -1,0 +1,34 @@
+name: Build HTML with LaTeXML
+
+on:
+  push:
+    branches: [ main ]
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Install LaTeXML
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y latexml
+
+      - name: Build HTML
+        run: |
+          mkdir -p docs
+          # Convert LaTeX -> HTML5
+          latexml --dest=build.xml main.tex
+          latexmlpost --format=html5 --dest=docs/index.html build.xml
+
+      - name: Commit generated site to docs/
+        run: |
+          git config user.name "github-actions"
+          git config user.email "github-actions@github.com"
+          git add docs
+          git commit -m "Update HTML (LaTeXML)" || echo "No changes"
+          git push
