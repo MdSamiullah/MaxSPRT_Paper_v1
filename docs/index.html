@@ -2,7 +2,7 @@
 <head>
 <meta http-equiv="content-type" content="text/html; charset=UTF-8">
 <title>Implementation of a framework to apply Sequential Analysis for Vaccine Safety Surveillance on SAEFVIC Dataset</title>
-<!--Generated on Mon Feb  2 07:19:10 2026 by LaTeXML (version 0.8.8) http://dlmf.nist.gov/LaTeXML/.-->
+<!--Generated on Mon Feb  2 07:25:39 2026 by LaTeXML (version 0.8.8) http://dlmf.nist.gov/LaTeXML/.-->
 <!--Document created on Received: date / Accepted: date.-->
 
 <link rel="stylesheet" href="LaTeXML.css" type="text/css">
@@ -144,7 +144,7 @@ By conditioning on observed events, the Conditional MaxSPRT (CMaxSPRT) goes one 
 <div id="S2.p1" class="ltx_para">
 <p class="ltx_p">In addition to the introductory developmental trajectory provided in Section <a href="#S1" title="1 Introduction ‣ Implementation of a framework to apply Sequential Analysis for Vaccine Safety Surveillance on SAEFVIC Dataset" class="ltx_ref"><span class="ltx_text ltx_ref_tag">1</span></a>, this section describes the evolution of sequential analysis focused on likelihood ratio tests such as SPRT and MaxSPRT as reported in the literature. It forms the foundation for the framework proposed in this paper for the implementation of the variations of the sequential surveillance technique for vaccine safety. We look at how variations in data types, distribution features, parameter availability, and organisational constraints—such as concerns about data timeliness and completeness—all affect the form and application of sequential analysis methods, leading to variations in implementation strategies and surveillance results.</p>
 </div>
-<figure id="S2.F1" class="ltx_figure"><img src="x1.png" id="S2.F1.g1" class="ltx_graphics ltx_centering ltx_img_landscape" width="830" height="375" alt="Refer to caption">
+<figure id="S2.F1" class="ltx_figure"><img src="x3.png" id="S2.F1.g1" class="ltx_graphics ltx_centering ltx_img_landscape" width="830" height="375" alt="Refer to caption">
 <figcaption class="ltx_caption ltx_centering"><span class="ltx_tag ltx_tag_figure">Figure 1: </span>Sequential Analysis: Comparative View Across Parameters and Conditions.</figcaption>
 </figure>
 <div id="S2.p2" class="ltx_para">
@@ -1520,7 +1520,7 @@ Silva et al. further demonstrated that the analytical objective should guide the
 </div>
 </div>
 </figure>
-<figure id="S3.F2" class="ltx_figure"><img src="MaxSPRT_RSequential_Paper.png" id="S3.F2.g1" class="ltx_graphics ltx_centering ltx_img_landscape" width="598" height="369" alt="Refer to caption">
+<figure id="S3.F2" class="ltx_figure"><img src="figures/MaxSPRT_RSequential_Paper.png" id="S3.F2.g1" class="ltx_graphics ltx_centering ltx_img_landscape" width="598" height="369" alt="Refer to caption">
 <figcaption class="ltx_caption ltx_centering"><span class="ltx_tag ltx_tag_figure">Figure 2: </span>Visualising signal detection using a sequential testing approach with alpha spending</figcaption>
 </figure>
 <div id="S3.SS2.SSS9.p2" class="ltx_para">
@@ -1628,7 +1628,7 @@ stiw}\times\theta}" display="inline"><mrow><msub><mi>μ</mi><mi>s</mi></msub><mo
 <div id="S3.SS5.p1" class="ltx_para">
 <p class="ltx_p">Figure <a href="#S3.F3" title="Figure 3 ‣ 3.5 Flowchart ‣ 3 Results ‣ Implementation of a framework to apply Sequential Analysis for Vaccine Safety Surveillance on SAEFVIC Dataset" class="ltx_ref"><span class="ltx_text ltx_ref_tag">3</span></a>, shows a flow diagram of various sequential analyses. It describes the steps from taking input through to signal detection, including possible decision points to get a variation of sequential analysis utilising the available information and selecting from possible options. The diagram, however, shows a general flow of processes for most of the possible implementations and variations.</p>
 </div>
-<figure id="S3.F3" class="ltx_figure"><img src="x2.png" id="S3.F3.g1" class="ltx_graphics ltx_centering ltx_img_landscape" width="747" height="572" alt="Refer to caption">
+<figure id="S3.F3" class="ltx_figure"><img src="x4.png" id="S3.F3.g1" class="ltx_graphics ltx_centering ltx_img_landscape" width="747" height="572" alt="Refer to caption">
 <figcaption class="ltx_caption ltx_centering"><span class="ltx_tag ltx_tag_figure">Figure 3: </span>Flowchart of MaxSPRT-based Sequential Analysis</figcaption>
 </figure>
 </section>
@@ -3028,7 +3028,7 @@ The Sequential R package provides a powerful framework for implementing sequenti
 </article>
 </div>
 <footer class="ltx_page_footer">
-<div class="ltx_page_logo">Generated  on Mon Feb  2 07:19:10 2026 by <a href="http://dlmf.nist.gov/LaTeXML/" class="ltx_LaTeXML_logo"><span style="letter-spacing:-0.2em; margin-right:0.1em;">L<span class="ltx_font_smallcaps" style="position:relative; bottom:2.2pt;">a</span>T<span class="ltx_font_smallcaps" style="font-size:120%;position:relative; bottom:-0.2ex;">e</span></span><span style="font-size:90%; position:relative; bottom:-0.2ex;">XML</span><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAsAAAAOCAYAAAD5YeaVAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAALEwAACxMBAJqcGAAAAAd0SU1FB9wKExQZLWTEaOUAAAAddEVYdENvbW1lbnQAQ3JlYXRlZCB3aXRoIFRoZSBHSU1Q72QlbgAAAdpJREFUKM9tkL+L2nAARz9fPZNCKFapUn8kyI0e4iRHSR1Kb8ng0lJw6FYHFwv2LwhOpcWxTjeUunYqOmqd6hEoRDhtDWdA8ApRYsSUCDHNt5ul13vz4w0vWCgUnnEc975arX6ORqN3VqtVZbfbTQC4uEHANM3jSqXymFI6yWazP2KxWAXAL9zCUa1Wy2tXVxheKA9YNoR8Pt+aTqe4FVVVvz05O6MBhqUIBGk8Hn8HAOVy+T+XLJfLS4ZhTiRJgqIoVBRFIoric47jPnmeB1mW/9rr9ZpSSn3Lsmir1fJZlqWlUonKsvwWwD8ymc/nXwVBeLjf7xEKhdBut9Hr9WgmkyGEkJwsy5eHG5vN5g0AKIoCAEgkEkin0wQAfN9/cXPdheu6P33fBwB4ngcAcByHJpPJl+fn54mD3Gg0NrquXxeLRQAAwzAYj8cwTZPwPH9/sVg8PXweDAauqqr2cDjEer1GJBLBZDJBs9mE4zjwfZ85lAGg2+06hmGgXq+j3+/DsixYlgVN03a9Xu8jgCNCyIegIAgx13Vfd7vdu+FweG8YRkjXdWy329+dTgeSJD3ieZ7RNO0VAXAPwDEAO5VKndi2fWrb9jWl9Esul6PZbDY9Go1OZ7PZ9z/lyuD3OozU2wAAAABJRU5ErkJggg==" alt="Mascot Sammy"></a>
+<div class="ltx_page_logo">Generated  on Mon Feb  2 07:25:39 2026 by <a href="http://dlmf.nist.gov/LaTeXML/" class="ltx_LaTeXML_logo"><span style="letter-spacing:-0.2em; margin-right:0.1em;">L<span class="ltx_font_smallcaps" style="position:relative; bottom:2.2pt;">a</span>T<span class="ltx_font_smallcaps" style="font-size:120%;position:relative; bottom:-0.2ex;">e</span></span><span style="font-size:90%; position:relative; bottom:-0.2ex;">XML</span><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAsAAAAOCAYAAAD5YeaVAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAALEwAACxMBAJqcGAAAAAd0SU1FB9wKExQZLWTEaOUAAAAddEVYdENvbW1lbnQAQ3JlYXRlZCB3aXRoIFRoZSBHSU1Q72QlbgAAAdpJREFUKM9tkL+L2nAARz9fPZNCKFapUn8kyI0e4iRHSR1Kb8ng0lJw6FYHFwv2LwhOpcWxTjeUunYqOmqd6hEoRDhtDWdA8ApRYsSUCDHNt5ul13vz4w0vWCgUnnEc975arX6ORqN3VqtVZbfbTQC4uEHANM3jSqXymFI6yWazP2KxWAXAL9zCUa1Wy2tXVxheKA9YNoR8Pt+aTqe4FVVVvz05O6MBhqUIBGk8Hn8HAOVy+T+XLJfLS4ZhTiRJgqIoVBRFIoric47jPnmeB1mW/9rr9ZpSSn3Lsmir1fJZlqWlUonKsvwWwD8ymc/nXwVBeLjf7xEKhdBut9Hr9WgmkyGEkJwsy5eHG5vN5g0AKIoCAEgkEkin0wQAfN9/cXPdheu6P33fBwB4ngcAcByHJpPJl+fn54mD3Gg0NrquXxeLRQAAwzAYj8cwTZPwPH9/sVg8PXweDAauqqr2cDjEer1GJBLBZDJBs9mE4zjwfZ85lAGg2+06hmGgXq+j3+/DsixYlgVN03a9Xu8jgCNCyIegIAgx13Vfd7vdu+FweG8YRkjXdWy329+dTgeSJD3ieZ7RNO0VAXAPwDEAO5VKndi2fWrb9jWl9Esul6PZbDY9Go1OZ7PZ9z/lyuD3OozU2wAAAABJRU5ErkJggg==" alt="Mascot Sammy"></a>
 </div></footer>
 </div>
 </body>
