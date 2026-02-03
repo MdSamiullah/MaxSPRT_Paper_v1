@@ -54,6 +54,8 @@
 
 
 
+
+
 <!--  %LaTeXML: emit markers (to be replaced automatically by workflow) --><ERROR class="undefined">\SetKwInOut</ERROR><!--  %“LinesNumbered --><!--  %“def“BibTeX––“rm B“kern-.05em–“sc i“kern-.025em b˝“kern-.08em 
      %T“kern-.1667em“lower.7ex“hbox–E˝“kern-.125emX˝˝ -->CallCalling Syntax
 
@@ -89,13 +91,13 @@
     <personname>Jim Buttery</personname>
   </creator>
   <creator before="  " role="author">
-    <personname>Hazel J. Clothier</personname>
+    <personname><!--  %**** main.tex Line 150 **** -->Hazel J. Clothier</personname>
   </creator>
   <creator before="  " role="author">
     <personname>Jiying Yin</personname>
   </creator>
   <creator before="  " role="author">
-    <personname><!--  %**** main.tex Line 150 **** -->John Mallard</personname>
+    <personname>John Mallard</personname>
   </creator>
   <creator before="  " role="author">
     <personname>Jeremiah Munakabayo</personname>
@@ -106,7 +108,7 @@
   <creator before="  " role="author">
     <personname><!--  %Ann E Nicholson            “and -->Gerardo Luis Dimaguila</personname>
   </creator>
-  <date role="creation">Received: date / Accepted: date</date>
+  <date role="creation"><!--  %**** main.tex Line 175 **** -->Received: date / Accepted: date</date>
   <abstract name="Abstract">
 <!--  %Sequential analysis methods have evolved to enhance early detection of rare vaccine-related adverse events while controlling error rates. Traditional SPRT, limited by fixed alternatives and sensitivity to relative risk, led to MaxSPRT, which allows real-time monitoring with composite alternatives using Poisson or Binomial models. CMaxSPRT improves Type I error control under sparse historical data by conditioning on observed events. Alpha spending functions further refine error control across time, and when optimised via linear programming, they minimise time to signal, balance error types, and outperform classical approaches in vaccine safety surveillance. The predictive value and power of controlling Type-I and Type-II error as well as achieving optimized Expected Time To Signal (ETS) and Expected Sample Size to signal (ESS), and the ability to monitor adverse events continuously and in a group manner have made it an emerging technique for vaccine adverse event surveillance. 
      %In this paper, we present a comprehensive framework for implementing sequential analysis on various organizational settings including a generalised data wrangling technique in a spontaneous vaccine safety surveillance system. 
@@ -137,8 +139,8 @@ By conditioning on observed events, the Conditional MaxSPRT (CMaxSPRT) goes one 
   <note class="ltx_note_frontmatter" role="journal"><!--  %“usepackage–mathptmx˝      % use Times fonts if available on your TeX system -->DrugSafety<!--  %insert here the call for the packages your document requires 
      %“usepackage–latexsym˝ 
      %etc. 
-     %please place your own definitions here and don’t use “def but 
      %**** main.tex Line 125 **** 
+     %please place your own definitions here and don’t use “def but 
      %“newcommand–˝–˝ 
      %Insert the name of ”your journal” with --></note>
   <section xml:id="Sx1">
@@ -369,8 +371,8 @@ By conditioning on observed events, the Conditional MaxSPRT (CMaxSPRT) goes one 
         <tag role="refnum">1</tag>
         <tag role="typerefnum">Figure 1</tag>
       </tags>
-      <graphics candidates="figures/Variations_MaxSPRT.pdf" class="ltx_centering" graphic="figures/Variations_MaxSPRT.pdf" options="width=433.62pt,keepaspectratio=true" xml:id="S2.F1.g1"/>
-<!--  %**** main.tex Line 250 **** -->      <toccaption class="ltx_centering"><tag close=" ">1</tag>Sequential Analysis: Comparative View Across Parameters and Conditions.</toccaption>
+<!--  %**** main.tex Line 250 **** -->      <graphics candidates="figures/Variations_MaxSPRT.pdf" class="ltx_centering" graphic="figures/Variations_MaxSPRT.pdf" options="width=433.62pt,keepaspectratio=true" xml:id="S2.F1.g1"/>
+      <toccaption class="ltx_centering"><tag close=" ">1</tag>Sequential Analysis: Comparative View Across Parameters and Conditions.</toccaption>
       <caption class="ltx_centering"><tag close=": ">Figure 1</tag>Sequential Analysis: Comparative View Across Parameters and Conditions.</caption>
     </figure>
     <para xml:id="S2.p2">
@@ -473,60 +475,60 @@ Silva et al. further demonstrated that the analytical objective should guide the
 <inline-enumerate xml:id="S2.I2">
           <inline-item xml:id="S2.I2.i1">
             <tags>
-              <tag>(i)</tag>
-              <tag role="autoref">item (i)</tag>
-              <tag role="refnum">(i)</tag>
-              <tag role="typerefnum">item (i)</tag>
+              <tag><!--  %**** main.tex Line 275 **** -->(i)</tag>
+              <tag role="autoref"><!--  %**** main.tex Line 275 **** -->item (i)</tag>
+              <tag role="refnum"><!--  %**** main.tex Line 275 **** -->(i)</tag>
+              <tag role="typerefnum"><!--  %**** main.tex Line 275 **** -->item (i)</tag>
             </tags>
             <text>the grouping of the reports based on age;
 </text>
           </inline-item>
           <inline-item xml:id="S2.I2.i2">
             <tags>
-              <tag>(ii)</tag>
-              <tag role="autoref">item (ii)</tag>
-              <tag role="refnum">(ii)</tag>
-              <tag role="typerefnum">item (ii)</tag>
+              <tag><!--  %**** main.tex Line 275 **** -->(ii)</tag>
+              <tag role="autoref"><!--  %**** main.tex Line 275 **** -->item (ii)</tag>
+              <tag role="refnum"><!--  %**** main.tex Line 275 **** -->(ii)</tag>
+              <tag role="typerefnum"><!--  %**** main.tex Line 275 **** -->item (ii)</tag>
             </tags>
             <text>the decision to use any comparator rate, sources of the comparator rate, the process of calculating the comparator rate;
 </text>
           </inline-item>
           <inline-item xml:id="S2.I2.i3">
             <tags>
-              <tag>(iii)</tag>
-              <tag role="autoref">item (iii)</tag>
-              <tag role="refnum">(iii)</tag>
-              <tag role="typerefnum">item (iii)</tag>
+              <tag><!--  %**** main.tex Line 275 **** -->(iii)</tag>
+              <tag role="autoref"><!--  %**** main.tex Line 275 **** -->item (iii)</tag>
+              <tag role="refnum"><!--  %**** main.tex Line 275 **** -->(iii)</tag>
+              <tag role="typerefnum"><!--  %**** main.tex Line 275 **** -->item (iii)</tag>
             </tags>
             <text>the length of the risk window and the decision to slice or not slice risk windows;
 </text>
           </inline-item>
           <inline-item xml:id="S2.I2.i4">
             <tags>
-              <tag>(iv)</tag>
-              <tag role="autoref">item (iv)</tag>
-              <tag role="refnum">(iv)</tag>
-              <tag role="typerefnum">item (iv)</tag>
+              <tag><!--  %**** main.tex Line 275 **** -->(iv)</tag>
+              <tag role="autoref"><!--  %**** main.tex Line 275 **** -->item (iv)</tag>
+              <tag role="refnum"><!--  %**** main.tex Line 275 **** -->(iv)</tag>
+              <tag role="typerefnum"><!--  %**** main.tex Line 275 **** -->item (iv)</tag>
             </tags>
             <text>using self-controls or other controls;
 </text>
           </inline-item>
           <inline-item xml:id="S2.I2.i5">
             <tags>
-              <tag>(v)</tag>
-              <tag role="autoref">item (v)</tag>
-              <tag role="refnum">(v)</tag>
-              <tag role="typerefnum">item (v)</tag>
+              <tag><!--  %**** main.tex Line 275 **** -->(v)</tag>
+              <tag role="autoref"><!--  %**** main.tex Line 275 **** -->item (v)</tag>
+              <tag role="refnum"><!--  %**** main.tex Line 275 **** -->(v)</tag>
+              <tag role="typerefnum"><!--  %**** main.tex Line 275 **** -->item (v)</tag>
             </tags>
             <text>choosing the unvaccinated population in the concurrent data as comparator;
 </text>
           </inline-item>
           <inline-item xml:id="S2.I2.i6">
             <tags>
-              <tag>(vi)</tag>
-              <tag role="autoref">item (vi)</tag>
-              <tag role="refnum">(vi)</tag>
-              <tag role="typerefnum">item (vi)</tag>
+              <tag><!--  %**** main.tex Line 275 **** -->(vi)</tag>
+              <tag role="autoref"><!--  %**** main.tex Line 275 **** -->item (vi)</tag>
+              <tag role="refnum"><!--  %**** main.tex Line 275 **** -->(vi)</tag>
+              <tag role="typerefnum"><!--  %**** main.tex Line 275 **** -->item (vi)</tag>
             </tags>
             <text>the decision to use the length of exposure and the method to compute it, e.g., using <Math mode="inline" tex="l_{stiwa}" text="l _ (s * t * i * w * a)" xml:id="S2.I2.i6.m1">
                 <XMath>
@@ -548,10 +550,10 @@ Silva et al. further demonstrated that the analytical objective should guide the
           </inline-item>
           <inline-item xml:id="S2.I2.i7">
             <tags>
-              <tag>(vii)</tag>
-              <tag role="autoref">item (vii)</tag>
-              <tag role="refnum">(vii)</tag>
-              <tag role="typerefnum">item (vii)</tag>
+              <tag><!--  %**** main.tex Line 275 **** -->(vii)</tag>
+              <tag role="autoref"><!--  %**** main.tex Line 275 **** -->item (vii)</tag>
+              <tag role="refnum"><!--  %**** main.tex Line 275 **** -->(vii)</tag>
+              <tag role="typerefnum"><!--  %**** main.tex Line 275 **** -->item (vii)</tag>
             </tags>
             <text>the choice of using a test margin <cite class="ltx_citemacro_citep">(<bibref bibrefs="kulldorff2011maximized" separator=";" show="AuthorsPhrase1Year" yyseparator=",">
                   <bibrefphrase>, </bibrefphrase>
@@ -560,10 +562,10 @@ Silva et al. further demonstrated that the analytical objective should guide the
           </inline-item>
           <inline-item xml:id="S2.I2.i8">
             <tags>
-              <tag>(viii)</tag>
-              <tag role="autoref">item (viii)</tag>
-              <tag role="refnum">(viii)</tag>
-              <tag role="typerefnum">item (viii)</tag>
+              <tag><!--  %**** main.tex Line 275 **** -->(viii)</tag>
+              <tag role="autoref"><!--  %**** main.tex Line 275 **** -->item (viii)</tag>
+              <tag role="refnum"><!--  %**** main.tex Line 275 **** -->(viii)</tag>
+              <tag role="typerefnum"><!--  %**** main.tex Line 275 **** -->item (viii)</tag>
             </tags>
             <text>the decision to use a delay adjustment, as well as the ways to calculate the delay adjustment.
 </text>
@@ -674,7 +676,7 @@ Silva et al. further demonstrated that the analytical objective should guide the
                   <tag role="typerefnum">2nd item</tag>
                 </tags>
                 <para xml:id="S2.I3.i4.I1.i2.p1">
-                  <p><text font="italic">Other alternative estimations:</text> If the CDC’s approach can be replaced by some more reasonable approach that can capture the length of exposure more realistically and effectively.</p>
+                  <p><text font="italic">Other alternative estimations:</text><!--  %**** main.tex Line 300 **** --> If the CDC’s approach can be replaced by some more reasonable approach that can capture the length of exposure more realistically and effectively.</p>
                 </para>
               </item>
             </itemize>
@@ -804,7 +806,8 @@ Silva et al. further demonstrated that the analytical objective should guide the
     <para xml:id="S3.p4">
       <p>To aid readability and implementation, we list the terminologies used in the literature to construct the narrative of the paper clearly. Table <ref labelref="LABEL:table:notation"/> enlists the terms, their notations, and symbols that are commonly used throughout the paper. We refer to Appendix <ref labelref="LABEL:sec:Terminology"/> for the definitions, examples, and explanations of the terms.</p>
     </para>
-<!--  %“added–SHOULD I ADD alpha, alpha spending function, Beta, statistical power, significance...˝ -->    <table inlist="lot" labels="LABEL:table:notation" placement="tb" xml:id="S3.T1">
+<!--  %**** main.tex Line 325 **** 
+     %“added–SHOULD I ADD alpha, alpha spending function, Beta, statistical power, significance...˝ -->    <table inlist="lot" labels="LABEL:table:notation" placement="tb" xml:id="S3.T1">
       <tags>
         <tag>Table 1</tag>
         <tag role="autoref">Table 1</tag>
@@ -1203,7 +1206,7 @@ Silva et al. further demonstrated that the analytical objective should guide the
           </Math> (Log-likelihood Ratio), which is used to detect a signal in Sequential analysis and MaxSPRT. Throughout the paper, we use a sample SAEFVIC dataset for a particular vaccine and ”Abdominal pain” as an AEFI as a running example to demonstrate the calculations.</p>
       </para>
       <para xml:id="S3.SS2.p2">
-        <p>Refer to Appendix <ref labelref="LABEL:Implementation"/> (Implementation) for full details of each step, particularly during a MaxSPRT implementation in the SAEFVIC setting.</p>
+        <p><!--  %**** main.tex Line 375 **** -->Refer to Appendix <ref labelref="LABEL:Implementation"/> (Implementation) for full details of each step, particularly during a MaxSPRT implementation in the SAEFVIC setting.</p>
       </para>
       <subsubsection inlist="toc" labels="LABEL:subsubsection:cumulativeObservedNumOfEvents" xml:id="S3.SS2.SSS1">
         <tags>
@@ -2095,17 +2098,11 @@ Silva et al. further demonstrated that the analytical objective should guide the
             <tag role="refnum">5</tag>
             <tag role="typerefnum">Table 5</tag>
           </tags>
-          <toccaption class="ltx_centering"><tag close=" "><!--  %“begin–adjustbox˝–width=“textwidth˝ -->5<!--  %**** main.tex Line 450 **** 
+<!--  %**** main.tex Line 450 **** -->          <toccaption class="ltx_centering"><tag close=" "><!--  %“begin–adjustbox˝–width=“textwidth˝ -->5<!--  %“begin–adjustbox˝–width=“textwidth˝ 
      %“begin–adjustbox˝–width=“textwidth˝ 
-     %**** main.tex Line 450 **** 
      %“begin–adjustbox˝–width=“textwidth˝ 
-     %**** main.tex Line 450 **** 
      %“begin–adjustbox˝–width=“textwidth˝ 
-     %**** main.tex Line 450 **** 
-     %“begin–adjustbox˝–width=“textwidth˝ 
-     %**** main.tex Line 450 **** 
-     %“begin–adjustbox˝–width=“textwidth˝ 
-     %**** main.tex Line 450 **** --></tag><!--  %“begin–adjustbox˝–width=“textwidth˝ -->Demonstration of Reporting delay distribution &amp; computing <!--  %**** main.tex Line 450 **** --><Math mode="inline" tex="p(s,t)" text="p * open-interval@(s, t)" xml:id="S3.T5.m1">
+     %“begin–adjustbox˝–width=“textwidth˝ --></tag><!--  %“begin–adjustbox˝–width=“textwidth˝ -->Demonstration of Reporting delay distribution &amp; computing <Math mode="inline" tex="p(s,t)" text="p * open-interval@(s, t)" xml:id="S3.T5.m1">
               <XMath>
                 <XMApp>
                   <XMTok meaning="times" role="MULOP">⁢</XMTok>
@@ -2128,12 +2125,8 @@ Silva et al. further demonstrated that the analytical objective should guide the
               </XMath>
             </Math> for Abdominal Pain</toccaption>
           <caption class="ltx_centering"><tag close=": ">Table 5</tag><!--  %“begin–adjustbox˝–width=“textwidth˝ 
-     %**** main.tex Line 450 **** 
-     %“begin–adjustbox˝–width=“textwidth˝ 
-     %**** main.tex Line 450 **** -->Demonstration of Reporting delay distribution &amp; computing <!--  %“begin–adjustbox˝–width=“textwidth˝ 
-     %**** main.tex Line 450 **** 
-     %“begin–adjustbox˝–width=“textwidth˝ 
-     %**** main.tex Line 450 **** --><Math mode="inline" tex="p(s,t)" text="p * open-interval@(s, t)" xml:id="S3.T5.m2">
+     %“begin–adjustbox˝–width=“textwidth˝ -->Demonstration of Reporting delay distribution &amp; computing <!--  %“begin–adjustbox˝–width=“textwidth˝ 
+     %“begin–adjustbox˝–width=“textwidth˝ --><Math mode="inline" tex="p(s,t)" text="p * open-interval@(s, t)" xml:id="S3.T5.m2">
               <XMath>
                 <XMApp>
                   <XMTok meaning="times" role="MULOP">⁢</XMTok>
@@ -3003,7 +2996,7 @@ Silva et al. further demonstrated that the analytical objective should guide the
             </XMath>
           </Math> calculation</title>
         <para xml:id="S3.SS2.SSS8.p1">
-          <p>To calculate the ratio for calculating <Math mode="inline" tex="p(s,t)" text="p * open-interval@(s, t)" xml:id="S3.SS2.SSS8.p1.m1">
+          <p><!--  %**** main.tex Line 500 **** -->To calculate the ratio for calculating <Math mode="inline" tex="p(s,t)" text="p * open-interval@(s, t)" xml:id="S3.SS2.SSS8.p1.m1">
               <XMath>
                 <XMApp>
                   <XMTok meaning="times" role="MULOP">⁢</XMTok>
@@ -3027,7 +3020,7 @@ Silva et al. further demonstrated that the analytical objective should guide the
             </Math>, we need to know the total number of reports for the week. This ratio can be estimated from historical data. That means, it is quite challenging to get the ratio in case the historical information is not available or insufficient. Estimating the ratio without a proper or exact denominator of the ratio from past data needs an approximation technique.</p>
         </para>
         <para xml:id="S3.SS2.SSS8.p2">
-          <p><!--  %**** main.tex Line 500 **** -->One of the approximation techniques would be to take the total reports found so far as a denominator to compute the ratio. However, this technique would not be sufficient to approximate the ratio properly. Because, as shown in Table <ref labelref="LABEL:table:demonstrationOfDelayInReporting"/>, it is quite possible that we have more information about earlier weeks and less information regarding later weeks. However, the ratio indicates a wrong proportion of data complete, that is, more for later weeks and less for earlier weeks, unlike a real scenario. In such cases, earlier week ratios will be more accurate than the later weeks. We can estimate the ratios of later weeks from the earlier weeks to deal with this challenge.</p>
+          <p>One of the approximation techniques would be to take the total reports found so far as a denominator to compute the ratio. However, this technique would not be sufficient to approximate the ratio properly. Because, as shown in Table <ref labelref="LABEL:table:demonstrationOfDelayInReporting"/>, it is quite possible that we have more information about earlier weeks and less information regarding later weeks. However, the ratio indicates a wrong proportion of data complete, that is, more for later weeks and less for earlier weeks, unlike a real scenario. In such cases, earlier week ratios will be more accurate than the later weeks. We can estimate the ratios of later weeks from the earlier weeks to deal with this challenge.</p>
         </para>
         <para xml:id="S3.SS2.SSS8.p3">
           <p>Our idea is to estimate a certain number of later weeks from the remaining weeks’ <Math mode="inline" tex="p(s,t)" text="p * open-interval@(s, t)" xml:id="S3.SS2.SSS8.p3.m1">
@@ -3516,7 +3509,7 @@ Silva et al. further demonstrated that the analytical objective should guide the
                 <td align="center" border="r t">91.9</td>
               </tr>
               <tr>
-                <td align="center" border="l r t" thead="row">5</td>
+                <td align="center" border="l r t" thead="row"><!--  %**** main.tex Line 525 **** -->5</td>
                 <td align="center" border="r t" thead="row">346</td>
                 <td align="center" border="r t">81.31</td>
                 <td align="center" border="r t">0.93</td>
@@ -3532,7 +3525,7 @@ Silva et al. further demonstrated that the analytical objective should guide the
                 <td align="center" border="r t">187.82</td>
               </tr>
               <tr>
-                <td align="center" border="l r t" thead="row"><!--  %**** main.tex Line 525 **** -->7</td>
+                <td align="center" border="l r t" thead="row">7</td>
                 <td align="center" border="r t" thead="row">65</td>
                 <td align="center" border="r t">15.28</td>
                 <td align="center" border="r t">0.75</td>
@@ -3956,7 +3949,7 @@ Silva et al. further demonstrated that the analytical objective should guide the
                 <td align="center" border="r t">No</td>
               </tr>
               <tr>
-                <td align="center" border="l r t">6</td>
+                <td align="center" border="l r t"><!--  %**** main.tex Line 550 **** -->6</td>
                 <td align="center" border="r t">6</td>
                 <td align="center" border="r t">20.3</td>
                 <td align="center" border="r t">19</td>
@@ -3980,7 +3973,7 @@ Silva et al. further demonstrated that the analytical objective should guide the
                 <td align="center" border="r t">No</td>
               </tr>
               <tr>
-                <td align="center" border="l r t"><!--  %**** main.tex Line 550 **** -->8</td>
+                <td align="center" border="l r t">8</td>
                 <td align="center" border="r t">8</td>
                 <td align="center" border="r t">18.2</td>
                 <td align="center" border="r t">31</td>
@@ -4108,7 +4101,6 @@ Silva et al. further demonstrated that the analytical objective should guide the
             </Math>), statistical power, the minimum number of events, the observed number of events, and the expected number of events. Calculation of the expected number of events is highlighted in the paper. To aid the readers, we briefly introduced those terms in Appendix <ref labelref="LABEL:MaxSPRTParams"/>.</p>
         </para>
 <!--  %“subsection–“added–MaxSPRT Parameters and use of Sequential Package˝˝“label–subsec:MaxSPRT˙Param˙Use˙SeqPackage˝ 
-     %**** main.tex Line 575 **** 
      %ADD CONTENTS ... ... ... -->      </subsubsection>
     </subsection>
     <subsection inlist="toc" labels="LABEL:MaxSPRTParams" xml:id="S3.SS3">
@@ -4213,7 +4205,7 @@ The expected time (or information accrual point) expressed in terms of the numbe
           </Math> is a positive number used for the power-type alpha spending function.</p>
       </para>
       <para class="ltx_noindent" xml:id="S3.SS3.p7">
-        <p><!--  %“changed–TYPE II ERROR RATE SHOULD BE ADDED? - “textbf–Statistical Power: ALSO NEED TO CHECK AS PER REVIEW AND STANDARD PRACTICE˝˝ -->Statistical power measures the probability of identifying the risk if it is truly present. It focuses on controlling Type-II errors and is influenced by sample size and significance level.<break/></p>
+        <p><!--  %**** main.tex Line 600 **** -->Statistical power measures the probability of identifying the risk if it is truly present. It focuses on controlling Type-II errors and is influenced by sample size and significance level.<!--  %“changed–TYPE II ERROR RATE SHOULD BE ADDED? - “textbf–Statistical Power: ALSO NEED TO CHECK AS PER REVIEW AND STANDARD PRACTICE˝˝ --><break/></p>
       </para>
       <para class="ltx_noindent" xml:id="S3.SS3.p8">
         <p><text font="bold">Relative risk:</text>
@@ -4700,7 +4692,7 @@ The equation in the definition takes into account several parameters, such as <M
                           <XMApp>
                             <XMTok role="SUPERSCRIPTOP" scriptpos="mid1"/>
                             <XMTok mathstyle="display" meaning="sum" role="SUMOP" scriptpos="mid">∑</XMTok>
-                            <XMTok font="italic" fontsize="70%" role="UNKNOWN">s</XMTok>
+<!--  %**** main.tex Line 625 **** -->                            <XMTok font="italic" fontsize="70%" role="UNKNOWN">s</XMTok>
                           </XMApp>
                           <XMApp>
                             <XMTok fontsize="70%" meaning="equals" role="RELOP">=</XMTok>
@@ -5020,10 +5012,10 @@ The equation in the definition takes into account several parameters, such as <M
         <p>Deciding whether to use age stratification or not, and if used, choosing between static grouping or dynamic binning technique adds to the challenge. Moreover, in the case of static grouping, deciding which grouping would give us optimal and more indicative results is not known and is subject to empirical analysis. In the case of either type of grouping, calculating the background rates for each age group also adds another layer of difficulty.</p>
       </para>
       <para xml:id="S4.SS1.p6">
-        <p>Interestingly, the data source and technique to calculate the background rates add some variations and thus, additional challenges are introduced. Data properties and characteristics, such as the distribution of the data, also increase complexity in the implementation. One of the significant inherent challenges in any process involving data is missing values. In the case of MaxSPRT analysis, missing information in the data needs special consideration. We handled the missing data with great care, explained in Appendix <ref labelref="LABEL:subsec:Preprocessing"/>.</p>
+        <p><!--  %**** main.tex Line 675 **** -->Interestingly, the data source and technique to calculate the background rates add some variations and thus, additional challenges are introduced. Data properties and characteristics, such as the distribution of the data, also increase complexity in the implementation. One of the significant inherent challenges in any process involving data is missing values. In the case of MaxSPRT analysis, missing information in the data needs special consideration. We handled the missing data with great care, explained in Appendix <ref labelref="LABEL:subsec:Preprocessing"/>.</p>
       </para>
       <para xml:id="S4.SS1.p7">
-        <p><!--  %**** main.tex Line 675 **** -->We also had to deal with some challenges regarding the selection of the development and implementation tool and setting up the environment. We explained the issue in detail with our workaround in Appendix <ref labelref="LABEL:subsec:SetupEnvironment"/>.</p>
+        <p>We also had to deal with some challenges regarding the selection of the development and implementation tool and setting up the environment. We explained the issue in detail with our workaround in Appendix <ref labelref="LABEL:subsec:SetupEnvironment"/>.</p>
       </para>
       <para xml:id="S4.SS1.p8">
         <p>Moreover, it is also challenging to validate or assess if the implementation of MaxSPRT was correctly performed; to the best of our knowledge, there is no common and publicly available data to be used as a benchmark and standard outcome to compare the results due to the privacy, security, and ethics policies of the data used in the domain of public health. Choosing and using the right version of sequential analysis adds to the complexity. To deal with all of these challenges, we implemented the framework in a way that allows the end user to exhibit different variations of sequential analysis for analysis using some arguments, and adjustment or changes to their values. We listed the available variations in Section <ref labelref="LABEL:subsec:IncorporatingVariation"/>.</p>
@@ -5066,7 +5058,7 @@ The equation in the definition takes into account several parameters, such as <M
       <p><text font="bold">Funding</text> This research was part of a program of work enabled by a generous grant from the Royal Children’s Hospital Foundation to the Centre for Health Analytics, Melbourne Children’s Campus.<break/></p>
     </para>
     <para class="ltx_noindent" xml:id="Sx2.p3">
-      <p><text font="bold"><!--  %**** main.tex Line 700 **** -->Conflicts of Interest/Competing Interests</text> None to mention.<break/></p>
+      <p><text font="bold">Conflicts of Interest/Competing Interests</text> None to mention.<break/></p>
     </para>
     <para class="ltx_noindent" xml:id="Sx2.p4">
       <p><text font="bold">Ethics Approval</text> This paper does not require ethics approval.<break/></p>
@@ -5090,7 +5082,7 @@ The equation in the definition takes into account several parameters, such as <M
       <p>Funding acquisition: Buttery<break/></p>
     </para>
     <para class="ltx_noindent" xml:id="Sx2.p11">
-      <p>Investigation: Samiullah, Clothier, Yin, Munakabayo, Kattan, Mallard<break/></p>
+<!--  %**** main.tex Line 725 **** -->      <p>Investigation: Samiullah, Clothier, Yin, Munakabayo, Kattan, Mallard<break/></p>
     </para>
     <para class="ltx_noindent" xml:id="Sx2.p12">
       <p>Methodology: Samiullah<break/></p>
@@ -5719,7 +5711,7 @@ Let a vaccinee <Math mode="inline" tex="V" text="V" xml:id="Thmdefinition6.p1.m1
             <td align="left" border="r t">1-42 days</td>
           </tr>
           <tr>
-            <td align="left" border="l r t">Bell’s palsy</td>
+            <td align="left" border="l r t"><!--  %**** main.tex Line 800 **** -->Bell’s palsy</td>
             <td align="left" border="r t">1-42 days</td>
           </tr>
           <tr>
@@ -5727,7 +5719,7 @@ Let a vaccinee <Math mode="inline" tex="V" text="V" xml:id="Thmdefinition6.p1.m1
             <td align="left" border="r t">0-1 day</td>
           </tr>
           <tr>
-            <td align="left" border="l r t"><!--  %**** main.tex Line 800 **** -->Encephalomyelitis/Encephalitis</td>
+            <td align="left" border="l r t">Encephalomyelitis/Encephalitis</td>
             <td align="left" border="r t">1-42 days</td>
           </tr>
           <tr>
@@ -6753,7 +6745,7 @@ let <Math mode="inline" tex="s" text="s" xml:id="Thmdefinition8.p1.m1">
                       <XMTok font="italic" role="UNKNOWN">W</XMTok>
                     </XMApp>
                   </XMath>
-                </Math> is the risk window length, expressed in the number of weeks,</p>
+                </Math><!--  %**** main.tex Line 850 **** --> is the risk window length, expressed in the number of weeks,</p>
             </para>
           </item>
           <item xml:id="A1.I1.i7">
@@ -6833,7 +6825,7 @@ let <Math mode="inline" tex="s" text="s" xml:id="Thmdefinition8.p1.m1">
                   <XMath>
                     <XMTok font="italic" role="UNKNOWN">A</XMTok>
                   </XMath>
-                </Math><!--  %**** main.tex Line 850 **** --> is the set of age group strata,</p>
+                </Math> is the set of age group strata,</p>
             </para>
           </item>
           <item xml:id="A1.I1.i9">
@@ -7103,7 +7095,7 @@ The number of events that occurred under the risk window in week <Math mode="inl
       </tags>
       <title font="bold"><tag>Definition 11</tag></title>
       <para xml:id="Thmdefinition11.p1">
-        <p><text font="bold">Historical comparator rate:</text>
+        <p><text font="bold">Historical comparator rate:</text><!--  %**** main.tex Line 875 **** -->
 Let a MaxSPRT analysis be performed for an AEFI due to a vaccine. Say, in previous <Math mode="inline" tex="y" text="y" xml:id="Thmdefinition11.p1.m1">
             <XMath>
               <XMTok font="italic" role="UNKNOWN">y</XMTok>
@@ -7546,8 +7538,8 @@ Let <Math mode="inline" tex="s" text="s" xml:id="Thmdefinition14.p1.m1">
           </Math>.</p>
       </para>
     </theorem>
-    <para xml:id="A1.p18">
-      <p><!--  %**** main.tex Line 900 **** -->As an example, at week <Math mode="inline" tex="s" text="s" xml:id="A1.p18.m1">
+<!--  %**** main.tex Line 900 **** -->    <para xml:id="A1.p18">
+      <p>As an example, at week <Math mode="inline" tex="s" text="s" xml:id="A1.p18.m1">
           <XMath>
             <XMTok font="italic" role="UNKNOWN">s</XMTok>
           </XMath>
@@ -7870,7 +7862,7 @@ Let <Math mode="inline" tex="s" text="s" xml:id="Thmdefinition16.p1.m1">
           </XMath>
         </Math>, we have to simply accumulate the number of events occurring weekly.</p>
     </para>
-    <theorem class="ltx_theorem_definition" labels="LABEL:defn:llr" xml:id="Thmdefinition17">
+<!--  %**** main.tex Line 925 **** -->    <theorem class="ltx_theorem_definition" labels="LABEL:defn:llr" xml:id="Thmdefinition17">
       <tags>
         <tag>Definition 17</tag>
         <tag role="autoref">17</tag>
@@ -8661,10 +8653,10 @@ Let <Math mode="inline" tex="s" text="s" xml:id="Thmdefinition18.p1.m1">
         <p>SAEFVIC data are prepared prior to processing. The pre-processing involves de-identification, noise handling, and missing data management. We have used the features of the MaxSPRT framework to deal with the pre-preprocessing challenges, especially, the missing data management. We allow analysers to opt-in methods to fill in missing values with some appropriate alternative values or simply discard the rows/records with missing values.</p>
       </para>
       <para xml:id="A2.SS1.p2">
-        <p>To justify filling in missing values, which is questionable from the point of view of epidemiology, this is logical from a data analysis perspective in certain scenarios. As an example, if we discard the records for some missing values in gender but the gender-specific stratification is not required in the calculation or analysis, then removing that record is not worthwhile. Rather, discarding the value adds bias to the numerator and denominator calculations. However, it is up to the user of the framework to decide whether to use the filling-in method or not.</p>
+        <p><!--  %**** main.tex Line 975 **** -->To justify filling in missing values, which is questionable from the point of view of epidemiology, this is logical from a data analysis perspective in certain scenarios. As an example, if we discard the records for some missing values in gender but the gender-specific stratification is not required in the calculation or analysis, then removing that record is not worthwhile. Rather, discarding the value adds bias to the numerator and denominator calculations. However, it is up to the user of the framework to decide whether to use the filling-in method or not.</p>
       </para>
       <para xml:id="A2.SS1.p3">
-        <p><!--  %**** main.tex Line 975 **** -->We first de-identify the data to preserve the privacy of the reporters and vaccinees. In the framework, we allow for the de-identification of the data, which is quite straightforward, by removing all demographics and identifiable information about the vaccine and the reporter. The analyser can also mention if any further information needs to be removed for the de-identification other than the demographics. In the de-identification process, we assign a unique identifier to each report for record-keeping purposes. We keep the columns as specified in Table <ref labelref="LABEL:table:sampleDataDemonstration"/>.</p>
+        <p>We first de-identify the data to preserve the privacy of the reporters and vaccinees. In the framework, we allow for the de-identification of the data, which is quite straightforward, by removing all demographics and identifiable information about the vaccine and the reporter. The analyser can also mention if any further information needs to be removed for the de-identification other than the demographics. In the de-identification process, we assign a unique identifier to each report for record-keeping purposes. We keep the columns as specified in Table <ref labelref="LABEL:table:sampleDataDemonstration"/>.</p>
       </para>
       <para xml:id="A2.SS1.p4">
         <p>Next, we dealt with noisy data. We treat noisy data in a special manner by initially considering them as missing values. In this paper, noisy data are defined as values or inputs susceptible to error due to human and system error. First, we run a routine data cleaning for logic consistency, missing values, and filtering process, where any value that is beyond the range and domain of the corresponding data attribute is identified as noisy data. We first replaced a noisy value with missing values. Then treated them the same way as missing values.</p>
@@ -8920,7 +8912,7 @@ Let <Math mode="inline" tex="s" text="s" xml:id="Thmdefinition18.p1.m1">
           <tag role="refnum">9</tag>
           <tag role="typerefnum">Table 9</tag>
         </tags>
-<!--  %**** main.tex Line 1000 **** -->        <toccaption class="ltx_centering"><tag close=" "><!--  %“begin–adjustbox˝–width=“textwidth˝ -->9<!--  %“begin–adjustbox˝–width=“textwidth˝ 
+        <toccaption class="ltx_centering"><tag close=" "><!--  %“begin–adjustbox˝–width=“textwidth˝ -->9<!--  %“begin–adjustbox˝–width=“textwidth˝ 
      %“begin–adjustbox˝–width=“textwidth˝ 
      %“begin–adjustbox˝–width=“textwidth˝ 
      %“begin–adjustbox˝–width=“textwidth˝ 
@@ -8993,7 +8985,7 @@ Let <Math mode="inline" tex="s" text="s" xml:id="Thmdefinition18.p1.m1">
             <tr>
               <td align="center" border="l r t"><text font="bold">V1</text></td>
               <td align="center" border="r t">5</td>
-              <td align="center" border="r t"><ERROR class="undefined">\faSyringe</ERROR></td>
+              <td align="center" border="r t">ICON-SYRINGE</td>
               <td align="center" backgroundcolor="#DFDFDF" border="r t" colspan="5"><Math backgroundcolor="#DFDFDF" mode="inline" tex="l_{sti(w=0)a}=5" text="l _ (s * t * i * (w = 0) * a) = 5" xml:id="A2.T9.m3">
                   <XMath>
                     <XMApp>
@@ -9025,7 +9017,7 @@ Let <Math mode="inline" tex="s" text="s" xml:id="Thmdefinition18.p1.m1">
                     </XMApp>
                   </XMath>
                 </Math></td>
-              <td align="center" border="r t"><ERROR class="undefined">\faAmbulance</ERROR></td>
+              <td align="center" border="r t">ICON-AMBULANCE</td>
               <td border="r t"/>
               <td border="r t"/>
               <td border="r t"/>
@@ -9050,7 +9042,7 @@ Let <Math mode="inline" tex="s" text="s" xml:id="Thmdefinition18.p1.m1">
               <td border="r t"/>
               <td border="r t"/>
               <td border="r t"/>
-              <td align="center" border="r t"><ERROR class="undefined">\faSyringe</ERROR></td>
+              <td align="center" border="r t">ICON-SYRINGE</td>
               <td align="center" backgroundcolor="#DFDFDF" border="r t" colspan="4"><Math backgroundcolor="#DFDFDF" mode="inline" tex="l_{sti(w=0)a}=4" text="l _ (s * t * i * (w = 0) * a) = 4" xml:id="A2.T9.m4">
                   <XMath>
                     <XMApp>
@@ -9082,7 +9074,7 @@ Let <Math mode="inline" tex="s" text="s" xml:id="Thmdefinition18.p1.m1">
                     </XMApp>
                   </XMath>
                 </Math></td>
-              <td align="center" border="r t"><ERROR class="undefined">\faAmbulance</ERROR></td>
+              <td align="center" border="r t">ICON-AMBULANCE</td>
               <td border="r t"/>
               <td border="r t"/>
               <td border="r t"/>
@@ -9101,7 +9093,7 @@ Let <Math mode="inline" tex="s" text="s" xml:id="Thmdefinition18.p1.m1">
               <td border="r t"/>
               <td border="r t"/>
               <td border="r t"/>
-              <td align="center" border="r t"><ERROR class="undefined">\faSyringe</ERROR></td>
+              <td align="center" border="r t">ICON-SYRINGE</td>
               <td align="center" backgroundcolor="#DFDFDF" border="r t"><text backgroundcolor="#DFDFDF"><Math backgroundcolor="#DFDFDF" mode="inline" tex="l=1" text="l = 1" xml:id="A2.T9.m5">
                     <XMath>
                       <XMApp>
@@ -9173,7 +9165,7 @@ Let <Math mode="inline" tex="s" text="s" xml:id="Thmdefinition18.p1.m1">
                     </XMApp>
                   </XMath>
                 </Math></td>
-              <td align="center" border="r t"><ERROR class="undefined">\faAmbulance</ERROR></td>
+              <td align="center" border="r t">ICON-AMBULANCE</td>
               <td border="r t"/>
               <td border="r t"/>
             </tr>
@@ -9183,7 +9175,7 @@ Let <Math mode="inline" tex="s" text="s" xml:id="Thmdefinition18.p1.m1">
               <td border="r t"/>
               <td border="r t"/>
               <td border="r t"/>
-              <td align="center" border="r t"><ERROR class="undefined">\faSyringe</ERROR></td>
+              <td align="center" border="r t">ICON-SYRINGE</td>
               <td align="center" backgroundcolor="#DFDFDF" border="r t" colspan="3"><Math backgroundcolor="#DFDFDF" mode="inline" tex="l_{sti(w=0)a}=3" text="l _ (s * t * i * (w = 0) * a) = 3" xml:id="A2.T9.m8">
                   <XMath>
                     <XMApp>
@@ -9288,7 +9280,7 @@ Let <Math mode="inline" tex="s" text="s" xml:id="Thmdefinition18.p1.m1">
               <td border="r t"/>
               <td border="r t"/>
               <td border="r t"/>
-              <td align="center" border="r t"><ERROR class="undefined">\faSyringe</ERROR></td>
+              <td align="center" border="r t">ICON-SYRINGE</td>
               <td align="center" backgroundcolor="#DFDFDF" border="r t" colspan="2"><Math backgroundcolor="#DFDFDF" mode="inline" tex="l_{sti(w=0)a}=2" text="l _ (s * t * i * (w = 0) * a) = 2" xml:id="A2.T9.m11">
                   <XMath>
                     <XMApp>
@@ -9382,7 +9374,7 @@ Let <Math mode="inline" tex="s" text="s" xml:id="Thmdefinition18.p1.m1">
                     </XMApp>
                   </XMath>
                 </Math></td>
-              <td align="center" border="r t"><ERROR class="undefined">\faAmbulance</ERROR></td>
+              <td align="center" border="r t">ICON-AMBULANCE</td>
               <td border="r t"/>
               <td border="r t"/>
               <td border="r t"/>
@@ -9400,7 +9392,7 @@ Let <Math mode="inline" tex="s" text="s" xml:id="Thmdefinition18.p1.m1">
               <td border="r t"/>
               <td border="r t"/>
               <td border="r t"/>
-              <td align="center" border="r t"><ERROR class="undefined">\faSyringe</ERROR></td>
+              <td align="center" border="r t">ICON-SYRINGE</td>
               <td align="center" backgroundcolor="#DFDFDF" border="r t" colspan="4"><Math backgroundcolor="#DFDFDF" mode="inline" tex="l_{sti(w=0)a}=4" text="l _ (s * t * i * (w = 0) * a) = 4" xml:id="A2.T9.m14">
                   <XMath>
                     <XMApp>
@@ -9463,7 +9455,7 @@ Let <Math mode="inline" tex="s" text="s" xml:id="Thmdefinition18.p1.m1">
                     </XMApp>
                   </XMath>
                 </Math></td>
-              <td align="center" border="r t"><ERROR class="undefined">\faAmbulance</ERROR></td>
+              <td align="center" border="r t">ICON-AMBULANCE</td>
             </tr>
             <tr>
               <td align="center" border="l r t"><text font="bold">V7</text></td>
@@ -9480,7 +9472,7 @@ Let <Math mode="inline" tex="s" text="s" xml:id="Thmdefinition18.p1.m1">
               <td border="r t"/>
               <td border="r t"/>
               <td border="r t"/>
-              <td align="center" border="r t"><ERROR class="undefined">\faSyringe</ERROR></td>
+              <td align="center" border="r t">ICON-SYRINGE</td>
               <td align="center" backgroundcolor="#DFDFDF" border="r t"><text backgroundcolor="#DFDFDF"><Math backgroundcolor="#DFDFDF" mode="inline" tex="l=1" text="l = 1" xml:id="A2.T9.m16">
                     <XMath>
                       <XMApp>
@@ -9521,7 +9513,7 @@ Let <Math mode="inline" tex="s" text="s" xml:id="Thmdefinition18.p1.m1">
                     </XMApp>
                   </XMath>
                 </Math></td>
-              <td align="center" border="r t"><ERROR class="undefined">\faAmbulance</ERROR></td>
+              <td align="center" border="r t">ICON-AMBULANCE</td>
               <td border="r t"/>
             </tr>
             <tr>
@@ -9543,7 +9535,7 @@ Let <Math mode="inline" tex="s" text="s" xml:id="Thmdefinition18.p1.m1">
               <td border="r t"/>
               <td border="r t"/>
               <td border="r t"/>
-              <td align="center" border="r t"><ERROR class="undefined">\faSyringe</ERROR></td>
+              <td align="center" border="r t">ICON-SYRINGE</td>
               <td align="center" backgroundcolor="#DFDFDF" border="r t" colspan="4"><Math backgroundcolor="#DFDFDF" mode="inline" tex="l_{sti(w=0)a}=4" text="l _ (s * t * i * (w = 0) * a) = 4" xml:id="A2.T9.m18">
                   <XMath>
                     <XMApp>
@@ -9606,7 +9598,7 @@ Let <Math mode="inline" tex="s" text="s" xml:id="Thmdefinition18.p1.m1">
             </tr>
           </tbody>
         </tabular>
-      </table>
+<!--  %**** main.tex Line 1025 **** -->      </table>
       <table inlist="lot" labels="LABEL:table:RiskControlUnVaxDemonstration" placement="!htb" xml:id="A2.T10">
         <tags>
           <tag>Table 10</tag>
@@ -9659,12 +9651,12 @@ Let <Math mode="inline" tex="s" text="s" xml:id="Thmdefinition18.p1.m1">
             <tr>
               <td align="center" border="l r t" thead="row"><text font="bold">V1</text></td>
               <td align="center" border="r t" thead="row"><text font="bold">5</text></td>
-              <td align="center" border="r t"><ERROR class="undefined">\faSyringe</ERROR></td>
+              <td align="center" border="r t">ICON-SYRINGE</td>
               <td border="r t" colspan="5"/>
-              <td align="center" backgroundcolor="#CAC6C6" border="r t"><ERROR class="undefined">\faAmbulance</ERROR></td>
+              <td align="center" backgroundcolor="#CAC6C6" border="r t"><text backgroundcolor="#CAC6C6">ICON-AMBULANCE</text></td>
               <td border="r t"/>
               <td border="r t" colspan="4"/>
-              <td align="center" backgroundcolor="#F2EBEB" border="r t"><ERROR class="undefined">\faAmbulance</ERROR></td>
+              <td align="center" backgroundcolor="#F2EBEB" border="r t"><text backgroundcolor="#F2EBEB">ICON-AMBULANCE</text></td>
               <td border="r t"/>
               <td border="r t" colspan="7"/>
             </tr>
@@ -9672,52 +9664,52 @@ Let <Math mode="inline" tex="s" text="s" xml:id="Thmdefinition18.p1.m1">
               <td align="center" border="l r t" thead="row"><text font="bold">V2</text></td>
               <td align="center" border="r t" thead="row"><text font="bold">4</text></td>
               <td border="r t" colspan="6"/>
-              <td align="center" border="r t"><ERROR class="undefined">\faSyringe</ERROR></td>
+              <td align="center" border="r t">ICON-SYRINGE</td>
               <td border="r t" colspan="4"/>
-              <td align="center" backgroundcolor="#CAC6C6" border="r t"><ERROR class="undefined">\faAmbulance</ERROR></td>
+              <td align="center" backgroundcolor="#CAC6C6" border="r t"><text backgroundcolor="#CAC6C6">ICON-AMBULANCE</text></td>
               <td border="r t" colspan="2"/>
               <td border="r t" colspan="5"/>
-              <td align="center" backgroundcolor="#F2EBEB" border="r t"><ERROR class="undefined">\faAmbulance</ERROR></td>
+              <td align="center" backgroundcolor="#F2EBEB" border="r t"><text backgroundcolor="#F2EBEB">ICON-AMBULANCE</text></td>
               <td border="r t"/>
             </tr>
             <tr>
               <td align="center" border="l r t" thead="row"><text font="bold">V3</text></td>
               <td align="center" border="r t" thead="row"><text font="bold">12</text></td>
               <td border="r t"/>
-              <td align="center" border="r t"><ERROR class="undefined">\faAmbulance</ERROR></td>
+              <td align="center" border="r t">ICON-AMBULANCE</td>
               <td border="r t" colspan="3"/>
-              <td align="center" border="r t"><ERROR class="undefined">\faSyringe</ERROR></td>
+              <td align="center" border="r t">ICON-SYRINGE</td>
               <td border="r t"/>
               <td border="r t" colspan="6"/>
               <td border="r t"/>
               <td border="r t" colspan="4"/>
-              <td align="center" backgroundcolor="#F2EBEB" border="r t"><ERROR class="undefined">\faAmbulance</ERROR></td>
+              <td align="center" backgroundcolor="#F2EBEB" border="r t"><text backgroundcolor="#F2EBEB">ICON-AMBULANCE</text></td>
               <td border="r t" colspan="2"/>
             </tr>
             <tr>
               <td align="center" border="l r t" thead="row"><text font="bold">V4</text></td>
               <td align="center" border="r t" thead="row"><text font="bold">22</text></td>
               <td border="r t" colspan="3"/>
-              <td align="center" border="r t"><ERROR class="undefined">\faSyringe</ERROR></td>
+              <td align="center" border="r t">ICON-SYRINGE</td>
               <td border="r t" colspan="3"/>
               <td border="r t" colspan="4"/>
               <td border="r t" colspan="2"/>
-              <td align="center" backgroundcolor="#F2EBEB" border="r t"><ERROR class="undefined">\faAmbulance</ERROR></td>
+              <td align="center" backgroundcolor="#F2EBEB" border="r t"><text backgroundcolor="#F2EBEB">ICON-AMBULANCE</text></td>
               <td border="r t" colspan="7"/>
             </tr>
             <tr>
               <td align="center" border="l r t" thead="row"><text font="bold">V5</text></td>
               <td align="center" border="r t" thead="row"><text font="bold">11</text></td>
-              <td align="center" border="r t"><ERROR class="undefined">\faAmbulance</ERROR></td>
+              <td align="center" border="r t">ICON-AMBULANCE</td>
               <td border="r t" colspan="3"/>
-              <td align="center" border="r t"><ERROR class="undefined">\faSyringe</ERROR></td>
+              <td align="center" border="r t">ICON-SYRINGE</td>
               <td border="r t" colspan="2"/>
               <td border="r t" colspan="3"/>
-              <td align="center" backgroundcolor="#CAC6C6" border="r t"><ERROR class="undefined">\faAmbulance</ERROR></td>
+              <td align="center" backgroundcolor="#CAC6C6" border="r t"><text backgroundcolor="#CAC6C6">ICON-AMBULANCE</text></td>
               <td border="r t"/>
               <td border="r t" colspan="2"/>
               <td border="r t" colspan="2"/>
-              <td align="center" backgroundcolor="#F2EBEB" border="r t"><ERROR class="undefined">\faAmbulance</ERROR></td>
+              <td align="center" backgroundcolor="#F2EBEB" border="r t"><text backgroundcolor="#F2EBEB">ICON-AMBULANCE</text></td>
               <td border="r t" colspan="4"/>
             </tr>
             <tr>
@@ -9725,40 +9717,40 @@ Let <Math mode="inline" tex="s" text="s" xml:id="Thmdefinition18.p1.m1">
               <td align="center" border="r t" thead="row"><text font="bold">10</text></td>
               <td border="r t" colspan="7"/>
               <td border="r t" colspan="2"/>
-              <td align="center" border="r t"><ERROR class="undefined">\faSyringe</ERROR></td>
+              <td align="center" border="r t">ICON-SYRINGE</td>
               <td border="r t" colspan="4"/>
               <td border="r t" colspan="3"/>
               <td border="r t" colspan="3"/>
-              <td align="center" backgroundcolor="#F2EBEB" border="r t"><ERROR class="undefined">\faAmbulance</ERROR></td>
+              <td align="center" backgroundcolor="#F2EBEB" border="r t"><text backgroundcolor="#F2EBEB">ICON-AMBULANCE</text></td>
             </tr>
             <tr>
               <td align="center" border="l r t" thead="row"><text font="bold">V7</text></td>
               <td align="center" border="r t" thead="row"><text font="bold">6</text></td>
               <td border="r t"/>
-              <td align="center" border="r t"><ERROR class="undefined">\faAmbulance</ERROR></td>
+              <td align="center" border="r t">ICON-AMBULANCE</td>
               <td border="r t" colspan="5"/>
               <td border="r t" colspan="5"/>
-              <td align="center" border="r t"><ERROR class="undefined">\faSyringe</ERROR></td>
+              <td align="center" border="r t">ICON-SYRINGE</td>
               <td border="r t"/>
               <td border="r t" colspan="5"/>
-              <td align="center" backgroundcolor="#CAC6C6" border="r t"><ERROR class="undefined">\faAmbulance</ERROR></td>
+              <td align="center" backgroundcolor="#CAC6C6" border="r t"><text backgroundcolor="#CAC6C6">ICON-AMBULANCE</text></td>
               <td border="r t"/>
             </tr>
             <tr>
               <td align="center" border="l r t" thead="row"><text font="bold">V8</text></td>
               <td align="center" border="r t" thead="row"><text font="bold">10</text></td>
               <td border="r t" colspan="3"/>
-              <td align="center" border="r t"><ERROR class="undefined">\faAmbulance</ERROR></td>
+              <td align="center" border="r t">ICON-AMBULANCE</td>
               <td border="r t" colspan="3"/>
               <td border="r t" colspan="4"/>
-              <td align="center" border="r t"><ERROR class="undefined">\faAmbulance</ERROR></td>
+              <td align="center" border="r t">ICON-AMBULANCE</td>
               <td border="r t" colspan="2"/>
               <td border="r t" colspan="2"/>
-              <td align="center" border="r t"><ERROR class="undefined">\faSyringe</ERROR></td>
+              <td align="center" border="r t">ICON-SYRINGE</td>
               <td border="r t" colspan="4"/>
             </tr>
             <tr>
-              <td align="center" border="l r tt" thead="row"><ERROR class="undefined">\faAmbulance</ERROR></td>
+              <td align="center" border="l r tt" thead="row"><text font="bold">ICON-AMBULANCE</text></td>
               <td align="left" border="r tt" thead="row"><text font="bold">Unvaxed events</text></td>
               <td align="center" border="r tt" colspan="7">4</td>
               <td align="center" border="r tt" colspan="7">1</td>
@@ -9772,7 +9764,7 @@ Let <Math mode="inline" tex="s" text="s" xml:id="Thmdefinition18.p1.m1">
               <td align="center" border="r t" colspan="7">3</td>
             </tr>
             <tr>
-              <td align="center" backgroundcolor="#CAC6C6" border="l r tt" thead="row"><ERROR class="undefined">\faAmbulance</ERROR></td>
+              <td align="center" backgroundcolor="#CAC6C6" border="l r tt" thead="row"><text backgroundcolor="#CAC6C6" font="bold">ICON-AMBULANCE</text></td>
               <td align="left" border="r tt" thead="row"><text font="bold">Risk events</text></td>
               <td align="center" border="r tt" colspan="7">1</td>
               <td align="center" border="r tt" colspan="7">2</td>
@@ -9780,13 +9772,13 @@ Let <Math mode="inline" tex="s" text="s" xml:id="Thmdefinition18.p1.m1">
             </tr>
             <tr>
               <td border="l r t" thead="row"/>
-              <td align="left" border="r t" thead="row"><text font="bold">Risk Person-days</text></td>
+              <td align="left" border="r t" thead="row"><text font="bold"><!--  %**** main.tex Line 1050 **** -->Risk Person-days</text></td>
               <td align="center" border="r t" colspan="7">12</td>
               <td align="center" border="r t" colspan="7">28</td>
               <td align="center" border="r t" colspan="7">13</td>
             </tr>
             <tr>
-              <td align="center" backgroundcolor="#F2EBEB" border="l r tt" thead="row"><ERROR class="undefined">\faAmbulance</ERROR></td>
+              <td align="center" backgroundcolor="#F2EBEB" border="l r tt" thead="row"><text backgroundcolor="#F2EBEB" font="bold">ICON-AMBULANCE</text></td>
               <td align="left" border="r tt" thead="row"><text font="bold">Control events</text></td>
               <td align="center" border="r tt" colspan="7">0</td>
               <td align="center" border="r tt" colspan="7">2</td>
@@ -9794,7 +9786,7 @@ Let <Math mode="inline" tex="s" text="s" xml:id="Thmdefinition18.p1.m1">
             </tr>
             <tr>
               <td border="b l r t" thead="row"/>
-              <td align="left" border="b r t" thead="row"><text font="bold"><!--  %**** main.tex Line 1050 **** -->Control Person-days</text></td>
+              <td align="left" border="b r t" thead="row"><text font="bold">Control Person-days</text></td>
               <td align="center" border="b r t" colspan="7">0</td>
               <td align="center" border="b r t" colspan="7">12</td>
               <td align="center" border="b r t" colspan="7">40</td>
@@ -9826,7 +9818,8 @@ Let <Math mode="inline" tex="s" text="s" xml:id="Thmdefinition18.p1.m1">
       </tags>
       <title><tag close=" ">B.2</tag>Processing of SAEFVIC Data</title>
       <para xml:id="A2.SS2.p1">
-        <p><!--  %summary% -->After the preprocessing of data, we started calculating the metrics that are required to perform MaxSPRT analysis and detect signals. The analysis is required to be performed in a well-defined frame of weeks for the sake of tracking the computation and facilitating weekly analysis. As a next step, we need a set of continuous windows in the analysis, where the data is divided into different windows of weeks based on their occurrence dates. Our implementation does not rely on any explicit length of the analysis or size of the data frame, or count of windows in the data frame. Moreover, our current implementation allows the analysers or epidemiologists to set their preferred start date, end date, length of analysis or count of windows in the frame.</p>
+        <p><!--  %**** main.tex Line 1075 **** -->After the preprocessing of data, we started calculating the metrics that are required to perform MaxSPRT analysis and detect signals. The analysis is required to be performed in a well-defined frame of weeks for the sake of tracking the computation and facilitating weekly analysis. As a next step, we need a set of continuous windows in the analysis, where the data is divided into different windows of weeks based on their occurrence dates. Our implementation does not rely on any explicit length of the analysis or size of the data frame, or count of windows in the data frame. Moreover, our current implementation allows the analysers or epidemiologists to set their preferred start date, end date, length of analysis or count of windows in the frame.
+<!--  %summary% --></p>
       </para>
       <para xml:id="A2.SS2.p2">
         <p>In this task, the main challenge was to take the starting date of the first week. Then the formation of the windows was quite straightforward. The first window was formed by adding 7 days to the start date of the analysis. This gives us another date. Hence, our windows are defined by the start and end date of the week (does not matter what day of the week it is). Then, adding 1 to the last date of the first week gives us the first date of the second week. We make a set of windows each of 7 days or 1 week long by continuously following the steps. A point worth noting is that the start date of analysis is by default taken from the data by finding the earliest vaccination date. This can also be replaced by the earliest report date or report submission date. On the other hand, the frame ends with a week having an end date that is not later than six days from the latest date of reporting found in the data. Hence, our implementation does not rely on any explicit length of the analysis, the size of the data frame, or the count of windows in the data frame. Moreover, our current implementation allows analysts or epidemiologists to set their preferred start date, end date, length of analysis, or count of windows in the frame.</p>
