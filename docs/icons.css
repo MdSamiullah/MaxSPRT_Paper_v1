@@ -1,0 +1,4 @@
+/* map inserted span markers to FontAwesome glyphs */
+.icon-syringe::before { font-family: "Font Awesome 6 Free"; font-weight: 900; content: "\f48e"; } /* fa-syringe */
+.icon-ambulance::before { font-family: "Font Awesome 6 Free"; font-weight: 900; content: "\f0f9"; } /* fa-ambulance */
+.icon-syringe::before, .icon-ambulance::before { margin-right: 0.2em; }
