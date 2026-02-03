@@ -306,7 +306,7 @@ To aid readability and implementation, we list the terminologies used in the lit
 
 \begin{table}[tb]
 \caption{Notations}
-\begin{adjustbox}{width=0.5\textwidth}
+%%\begin{adjustbox}{width=0.5\textwidth}
 \begin{tabular}{|l||c|}
 \hline
 \multicolumn{1}{|c||}{\textbf{Terms}}              & \textbf{Notations} \\ \hline \hline
@@ -323,7 +323,7 @@ Proportion of data complete                       & $p(s, t)$            \\ \hli
 Observed exposed person-time                      & $L_{stiwa}$             \\ \hline
 Log-likelihood Ratio                              & $LLR$                \\ \hline
 \end{tabular}
-\end{adjustbox}
+%%\end{adjustbox}
 \label{table:notation}
 \end{table}
 
@@ -337,7 +337,7 @@ Table~\ref{table:sampleDataDemonstration} shows the headers of a sample, a synth
 \begin{table*}[!htb]
 \centering
 \caption{SAEFVIC data set used in this paper with their attributes, types, and domains of the attributes, with pseudo sample data.}
-\begin{adjustbox}{width=\textwidth}
+%%\begin{adjustbox}{width=\textwidth}
 \begin{tabular}{|l|c|c|c|c|c|c|c|c|c|}
 \hline
 \textbf{Attributes}                & \textbf{VacID}        & \textbf{Vaccine Name}                                                & \textbf{Age}                                                                   & \textbf{Sex}                                                       & \textbf{Time of Vaccination}                                                     & \textbf{TTO}                                                           & \textbf{Reporting Time}                                                      & \textbf{Submission Time}                                                           & \textbf{Reactions}                                                     \\ \hline
@@ -345,7 +345,7 @@ Table~\ref{table:sampleDataDemonstration} shows the headers of a sample, a synth
 \textbf{Domains}                   & Report ID             & Name                                                                 & Years                                                                          & M/F                                                                & \begin{tabular}[c]{@{}c@{}}Time\\ Format:\\ dd/mm/yyyy HH:MM:SS\end{tabular} & Days                                                                   & \begin{tabular}[c]{@{}c@{}}Time\\ Format:\\ dd/mm/yyyy HH:MM:SS\end{tabular} & \begin{tabular}[c]{@{}c@{}}Time\\ Format:\\ dd/mm/yyyy HH:MM:SS\end{tabular}       & \begin{tabular}[c]{@{}c@{}}Set of names\\ Comma Separated\end{tabular} \\ \hline
 \textbf{Semantics}                 & Unique Identifier     & \begin{tabular}[c]{@{}c@{}}Name of the \\ vaccine brand\end{tabular} & \begin{tabular}[c]{@{}c@{}}Age of the\\ Vaccinee at\\ vaccination\end{tabular} & \begin{tabular}[c]{@{}c@{}}Gender\\ of the\\ Vaccinee\end{tabular} & \begin{tabular}[c]{@{}c@{}}Time of dose \\ administration\end{tabular}       & \begin{tabular}[c]{@{}c@{}}Time to\\ On setting\\ the AEFI\end{tabular} & \begin{tabular}[c]{@{}c@{}}When the AEFI \\ was reported\end{tabular}        & \begin{tabular}[c]{@{}c@{}}When the report was \\ recorded in SAEFVIC\end{tabular} & The Adverse Event                                                      \\ \hline
 \end{tabular}
-\end{adjustbox}
+%\end{adjustbox}
 \label{table:sampleDataDemonstration}
 \end{table*}
 
@@ -363,7 +363,7 @@ As an illustration, Table~\ref{table:ObservedReportCount} shows the weekly count
 \begin{table*}[tbh]
 \centering
 \caption{Demonstration of computing observed report count for MaxSPRT analysis for Abdominal Pain}
-\begin{adjustbox}{width=\textwidth}
+%\begin{adjustbox}{width=\textwidth}
 \begin{tabular}{|ccccccccccc|c|}
 \hline
 \multicolumn{11}{|c|}{Computing Observed Report count for   MaxSPRT analysis for Abdominal Pain}                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             &            \\ \hline
@@ -379,7 +379,7 @@ As an illustration, Table~\ref{table:ObservedReportCount} shows the weekly count
 \multicolumn{1}{|c|}{9}       & \multicolumn{1}{c|}{0}                                                                  & \multicolumn{1}{c|}{0}                                                                    & \multicolumn{1}{c|}{0}                                                                    & \multicolumn{1}{c|}{1}                                                                    & \multicolumn{1}{c|}{0}                                                                    & \multicolumn{1}{c|}{20}                                                                   & \multicolumn{1}{c|}{18}                                                                   & \multicolumn{1}{c|}{2}                                                                    & \multicolumn{1}{c|}{0}                                                                  & 41                                                                & 361        \\ \hline
 \multicolumn{1}{|c|}{10}     & \multicolumn{1}{c|}{0}                                                                  & \multicolumn{1}{c|}{0}                                                                    & \multicolumn{1}{c|}{0}                                                                    & \multicolumn{1}{c|}{0}                                                                    & \multicolumn{1}{c|}{1}                                                                    & \multicolumn{1}{c|}{4}                                                                    & \multicolumn{1}{c|}{1}                                                                    & \multicolumn{1}{c|}{2}                                                                    & \multicolumn{1}{c|}{0}                                                                  & 8                                                                 & 369        \\ \hline
 \end{tabular}
-\end{adjustbox}
+%\end{adjustbox}
 \label{table:ObservedReportCount}
 \end{table*}
 
@@ -394,7 +394,7 @@ The length of exposure is roughly the cumulative count of exposed time per vacci
 \begin{table*}[tbh]
 \centering
 \caption{Demonstration of computing   $l_{stiwa}$ for MaxSPRT analysis for   Abdominal Pain}
-\begin{adjustbox}{width=0.8\textwidth}
+%\begin{adjustbox}{width=0.8\textwidth}
 \begin{tabular}{|ccccccccccc|}
 \hline
 \multicolumn{11}{|c|}{Computing   $l_{stiwa}$ for MaxSPRT analysis for   Abdominal Pain}                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                \\ \hline
@@ -410,7 +410,7 @@ The length of exposure is roughly the cumulative count of exposed time per vacci
 \multicolumn{1}{|c|}{9}              & \multicolumn{1}{c|}{0}                                                                 & \multicolumn{1}{c|}{0}                                                                    & \multicolumn{1}{c|}{7}                                                                   & \multicolumn{1}{c|}{8}                                                                   & \multicolumn{1}{c|}{1}                                                                   & \multicolumn{1}{c|}{91}                                                                  & \multicolumn{1}{c|}{53}                                                                  & \multicolumn{1}{c|}{12}          & \multicolumn{1}{c|}{0}                                                        & 172                                                                 \\ \hline
 \multicolumn{1}{|c|}{10}              & \multicolumn{1}{c|}{0}                                                                 & \multicolumn{1}{c|}{0}                                                                    & \multicolumn{1}{c|}{7}                                                                   & \multicolumn{1}{c|}{7}                                                                   & \multicolumn{1}{c|}{4}                                                                   & \multicolumn{1}{c|}{41}                                                                  & \multicolumn{1}{c|}{13}                                                                  & \multicolumn{1}{c|}{10}         & \multicolumn{1}{c|}{0}                                                         & 82                                                                 \\ \hline
 \end{tabular}
-\end{adjustbox}
+%\end{adjustbox}
 \label{table:LstiwaCalculation}
 \end{table*}
 
@@ -428,7 +428,7 @@ There are several ways of calculating the comparator rate, and two of the plausi
 \begin{table*}[tb]
 \centering
 \caption{Demonstration of Reporting delay distribution \& computing $p(s, t)$ for Abdominal Pain}
-\begin{adjustbox}{width=\textwidth}
+%\begin{adjustbox}{width=\textwidth}
 \begin{tabular}{|cccccccccccc|}
 \hline
 \multicolumn{12}{|c|}{Reporting delay distribution   \& computing $p(s, t)$ for Abdominal Pain}                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               \\ \hline
@@ -442,7 +442,7 @@ There are several ways of calculating the comparator rate, and two of the plausi
 \multicolumn{1}{|c|}{9}                                                                & \multicolumn{1}{c|}{}                                                             & \multicolumn{1}{c|}{}                                                             & \multicolumn{1}{c|}{}                                                             & \multicolumn{1}{c|}{}                                                             & \multicolumn{1}{c|}{}                                                             & \multicolumn{1}{c|}{}                                                             & \multicolumn{1}{c|}{3}                                                            & \multicolumn{1}{c|}{6}                                                             & \multicolumn{1}{c|}{16}                                                               & \multicolumn{1}{c|}{25}                                                       & 9                                                                                     \\ \hline
 \multicolumn{1}{|c|}{10}                                                               & \multicolumn{1}{c|}{}                                                             & \multicolumn{1}{c|}{}                                                             & \multicolumn{1}{c|}{}                                                             & \multicolumn{1}{c|}{}                                                             & \multicolumn{1}{c|}{}                                                             & \multicolumn{1}{c|}{}                                                             & \multicolumn{1}{c|}{}                                                             & \multicolumn{1}{c|}{9}                                                             & \multicolumn{1}{c|}{18}                                                               & \multicolumn{1}{c|}{27}                                                       & 9                                                                                     \\ \hline
 \end{tabular}
-\end{adjustbox}
+%\end{adjustbox}
 \label{table:demonstrationOfDelayInReporting}
 \end{table*}
 
@@ -494,7 +494,7 @@ Table~\ref{table:DemonstrationOfDifferentPSTCalculations} shows the possible way
 \begin{table}[tbh]
 \centering
 \caption{Computing required parameter values for MaxSPRT analysis for Abdominal Pain using the formula in Definition~\ref{defn:ApproximateExpCount}}
-\begin{adjustbox}{width=0.48\textwidth}
+%\begin{adjustbox}{width=0.48\textwidth}
 \begin{tabular}{|c|c|c|c|c|c|c|}
 \hline
 \#Week & $l_{stiwa}$ & $\Theta$                   & $l_{stiwa} \times \Theta$ & $p(s, t)$ & $\mu_{t}$  & Cumu. $\mu_{t}$ \\ \hline
@@ -509,7 +509,7 @@ Table~\ref{table:DemonstrationOfDifferentPSTCalculations} shows the possible way
 9      & 172           &                         & 40.42          & 0.75    & 30.32 & 247.8      \\ \cline{1-2} \cline{4-7} 
 10     & 82            &                         & 19.27          & 0.25    & 4.82  & 252.6      \\ \hline
 \end{tabular}
-\end{adjustbox}
+%\end{adjustbox}
 \label{table:ComputationOfDifferentParameterValuesOfMaxSPRT}
 \end{table}
 
@@ -518,7 +518,7 @@ We used cumulative expected number of events, $\mu_{s}$ (a snapshot of calculati
 \begin{table}[!htb]
 \centering
 \caption{Demonstration of sequential signal detection using an alpha spending approach for Abdominal Pain (null hypothesis, $H_{0}$: no signal; a signal is indicated when $H_{0}$ is rejected based on time-varying critical values)}
-\begin{adjustbox}{width=0.5\textwidth}
+%\begin{adjustbox}{width=0.5\textwidth}
 \begin{tabular}{|c|c|c|c|c|c|c|c|c|c|}
 \hline
 Week\#, $t$ & Test\# & $\mu_{t}$   & $Y_{t}$ & Cumu. $\mu_{t}$ & Cumu. $Y_{t}$ & $RR_{t}$  & $LLR_{t}$  & $CV$  & Reject $H_{0}$? \\ \hline
@@ -533,7 +533,7 @@ Week\#, $t$ & Test\# & $\mu_{t}$   & $Y_{t}$ & Cumu. $\mu_{t}$ & Cumu. $Y_{t}$ &
 9      & 9      & 30.32 & 41     & 247.8          & 301               & 1.21        & 5.34 & 301 & Yes       \\ \hline
 10     & 10     & 4.82  & 8      & 252.6          & 309               & 1.22        & NA   & NA  & NA        \\ \hline
 \end{tabular}
-\end{adjustbox}
+%\end{adjustbox}
 \label{table:DemonstrationOfSignalDetection}
 \end{table}
 
@@ -772,7 +772,7 @@ In other words, the Risk window is the maximum number of days/weeks a vaccinee i
 \begin{table}[tbh]
 \centering
 \caption{Example of risk windows for potential AESIs~\citep{FDAMaxSPRT2021}}
-\begin{adjustbox}{width=0.45\textwidth}
+%\begin{adjustbox}{width=0.45\textwidth}
 \begin{tabular}{|l|l|}
 \hline
 \multicolumn{1}{|c|}{\textbf{AEFI}}          & \multicolumn{1}{c|}{\textbf{Risk Window}} \\ \hline
@@ -793,7 +793,7 @@ Immune thrombocytopenia (ITP)                & 1-42 days                        
 Transverse myelitis                          & 1-42 days                                 \\ \hline
 Multisystem inflammatory syndrome            & 1-42 days                                 \\ \hline
 \end{tabular}
-\end{adjustbox}
+%\end{adjustbox}
 \label{table:exampleAESIRiskWindow}
 \end{table}
 
@@ -981,7 +981,7 @@ Interestingly, in the case of some parameters that are not available for age gro
 \begin{table*}[!htb]
 \centering
 \caption{Demonstration of $l_{stiwa}$ calculation and exposed person-time}
-\begin{adjustbox}{width=\textwidth}
+%\begin{adjustbox}{width=\textwidth}
 \begin{tabular}{|cc|ccccccc|ccccccc|ccccccc|}
 \hline
 % Demonstration of $l_{stiwa}$ calculation and exposed person-time
@@ -1000,7 +1000,7 @@ Interestingly, in the case of some parameters that are not available for age gro
 \multicolumn{1}{|c|}{\textbf{V8}}                       & 10                               & \multicolumn{1}{c|}{}             & \multicolumn{1}{c|}{}             & \multicolumn{1}{c|}{}             & \multicolumn{1}{c|}{}             & \multicolumn{1}{c|}{}             & \multicolumn{1}{c|}{}             &              & \multicolumn{1}{c|}{}             & \multicolumn{1}{c|}{}             & \multicolumn{1}{c|}{}             & \multicolumn{1}{c|}{}             & \multicolumn{1}{c|}{}             & \multicolumn{1}{c|}{}             &              & \multicolumn{1}{c|}{}             & \multicolumn{1}{c|}{}             & \multicolumn{1}{c|}{\faSyringe}   & \multicolumn{4}{c|}{\cellcolor{gray!25}$l_{sti(w=0)a}=4$}                                                                                                    \\ \hline
 \multicolumn{2}{|c|}{\textbf{\begin{tabular}[c]{@{}c@{}}Weekly Sum\\ $l_{stiwa}$\end{tabular}}} & \multicolumn{7}{c|}{11}                                                                                                                                                                                                                & \multicolumn{7}{c|}{30}                                                                                                                                                                                                                & \multicolumn{7}{c|}{25}                                                                                                                                                                                                                \\ \hline
 \end{tabular}
-\end{adjustbox}
+%\end{adjustbox}
 \label{table:lstiwaDemonstration}
 \end{table*}
 
@@ -1011,7 +1011,7 @@ Interestingly, in the case of some parameters that are not available for age gro
 \begin{table*}[!htb]
 \centering
 \caption{Demonstration of event counts and person-time calculation for concurrent Data assuming 7 days of risk window.}
-\begin{adjustbox}{width=\textwidth}
+%\begin{adjustbox}{width=\textwidth}
 \begin{tabular}{|c|c|ccccccc|ccccccc|ccccccc|}
 \hline
                                      &                                                   & \multicolumn{7}{c|}{\textbf{Week, t = 1}}                                                                                                                                                                                                           & \multicolumn{7}{c|}{\textbf{Week, t = 2}}                                                                                                                                                                                                                                                                    & \multicolumn{7}{c|}{\textbf{Week, t = 3}}                                                                                                                                                                                                                                                        \\ \cline{3-23} 
@@ -1031,14 +1031,14 @@ Interestingly, in the case of some parameters that are not available for age gro
 \cellcolor[HTML]{F2EBEB}\textbf{\faAmbulance} & \multicolumn{1}{l|}{\textbf{Control events}}      & \multicolumn{7}{c|}{0}                                                                                                                                                                                                                              & \multicolumn{7}{c|}{2}                                                                                                                                                                                                                                                                                       & \multicolumn{7}{c|}{4}                                                                                                                                                                                                                                                                           \\ \hline
 \cellcolor[HTML]{F2EBEB}\textbf{}    & \multicolumn{1}{l|}{\textbf{Control Person-days}} & \multicolumn{7}{c|}{0}                                                                                                                                                                                                                              & \multicolumn{7}{c|}{12}                                                                                                                                                                                                                                                                                      & \multicolumn{7}{c|}{40}                                                                                                                                                                                                                                                                          \\ \hline
 \end{tabular}
-\end{adjustbox}
+%\end{adjustbox}
 \label{table:RiskControlUnVaxDemonstration}
 \end{table*}
 
 % \begin{table*}
 %     \centering
 % \caption{Demostration of Observed counts for concurrent Data for the situation in Table~\ref{table:lstiwaDemonstration} assuming 7 days of risk window.}
-% \begin{adjustbox}{width=\textwidth}
+% %\begin{adjustbox}{width=\textwidth}
 %     \begin{tabular}{|c|c|c|c|c|c|c|}\hline
 %          Week&  Unvaxed Events&  Risk Events&  Control Events&  Unvaxed Person-days&  Risk  
 % Person-days& Control
@@ -1047,7 +1047,7 @@ Interestingly, in the case of some parameters that are not available for age gro
 %          2&  0&  &  &  0x5+2+5+7&  30& 7+\\ \hline
 %          3&  0&  &  &  0x7+2&  25& 7+\\ \hline
 %     \end{tabular}
-%     \end{adjustbox}
+%     %\end{adjustbox}
 % \label{tab:concurrentCountDemo}
 % \end{table*}
 
@@ -1062,7 +1062,7 @@ Finally, while computing various matrices like $p(s, t)$, $l_{stiwa}$, $Y$, $\mu
 \begin{table*}[!htb]
 \centering
 \caption{Demonstration of Different $p(s, t)$ Calculations}
-\begin{adjustbox}{width=\textwidth}
+%\begin{adjustbox}{width=\textwidth}
 \begin{tabular}{|cccccccccccc|}
 \hline
 \multicolumn{5}{|c|}{For s = 10}                                                                                                                                                                                                                                                                                                                                                                                & \multicolumn{4}{c|}{Using Historical Data}                                                                                                                                                                                                                                                                                                                                                                                                          & \multicolumn{3}{c|}{Using current data}                                                                                                                                                                                                                                                                                                           \\ \hline
@@ -1078,7 +1078,7 @@ Finally, while computing various matrices like $p(s, t)$, $l_{stiwa}$, $Y$, $\mu
 \multicolumn{1}{|c|}{10}    & \multicolumn{1}{c|}{27}                                                              & \multicolumn{1}{c|}{332}                                                                   & \multicolumn{1}{c|}{9}                                                                             & \multicolumn{1}{c|}{265}                                                                 & \multicolumn{1}{c|}{27/332 = 0.081}                                                                                  & \multicolumn{1}{c|}{0.08}                                                                                                       & \multicolumn{1}{c|}{265/332 = 0.8}                                                        & \multicolumn{1}{c|}{332/332 = 1.00}                                                            & \multicolumn{1}{c|}{9/265 = 0.03}                                                                                     & \multicolumn{1}{c|}{0.03}                                                                                                       & 9/27 = 0.33                                                                             \\ \hline
 \multicolumn{1}{|c|}{Total} & \multicolumn{1}{c|}{332}                                                             & \multicolumn{1}{c|}{}                                                                      & \multicolumn{1}{c|}{265}                                                                           & \multicolumn{8}{c|}{}                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              \\ \hline
 \end{tabular}
-\end{adjustbox}
+%\end{adjustbox}
 \label{table:DemonstrationOfDifferentPSTCalculations}
 \end{table*}
 
