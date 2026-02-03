@@ -1,34 +1,75 @@
-name: Build HTML with LaTeXML
+name: Build HTML with LaTeXML and inject icons
 
 on:
   push:
-    branches: [ main ]
+    branches: [ main ]    # change if your default branch is different
 
 permissions:
   contents: write
 
 jobs:
-  build:
+  build-and-publish:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - name: Checkout repo
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
 
       - name: Install LaTeXML
         run: |
-          sudo apt-get update
-          sudo apt-get install -y latexml
+          sudo apt-get update -y
+          sudo apt-get install -y latexml latexml-gui latexmlmath
 
-      - name: Build HTML
+      - name: Build with LaTeXML (LaTeX -> XML -> HTML5)
         run: |
+          mkdir -p build
+          # run latexml and latexmlpost (adjust main.tex if needed)
+          latexml --dest=build/main.xml main.tex
+          latexmlpost --format=html5 --dest=build/index.html build/main.xml
+
+      - name: Prepare docs/ for GitHub Pages
+        run: |
+          rm -rf docs || true
           mkdir -p docs
-          # Convert LaTeX -> HTML5
-          latexml --dest=build.xml main.tex
-          latexmlpost --format=html5 --dest=docs/index.html build.xml
+          cp -r build/* docs/
 
-      - name: Commit generated site to docs/
+      - name: Inject Font Awesome CDN and replace icon markers
         run: |
-          git config user.name "github-actions"
-          git config user.email "github-actions@github.com"
-          git add docs
-          git commit -m "Update HTML (LaTeXML)" || echo "No changes"
-          git push
+          # Insert Font Awesome CSS link just before </head> (only once)
+          perl -0777 -pe 's{</head>}{<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity=\"sha512-pbVw2g9Y+...\" crossorigin=\"anonymous\" referrerpolicy=\"no-referrer\"/>\n</head>}i' -i docs/index.html || true
+
+          # Replace the ASCII markers with spans. These are safe single-line replacements.
+          perl -pi -e 's/ICON-SYRINGE/<span class="icon-syringe"><\/span>/g' docs/index.html
+          perl -pi -e 's/ICON-AMBULANCE/<span class="icon-ambulance"><\/span>/g' docs/index.html
+
+          # (Optional) If LaTeXML put a BOM or weird whitespace, normalize
+          perl -pi -e 's/\x{FEFF}//g' docs/index.html
+
+      - name: Add a tiny CSS file for icon tweaks (optional)
+        run: |
+          cat > docs/icons.css <<'EOF'
+          /* optional: make FA icons look good inside inserted spans */
+          .icon-syringe::before { font-family: "Font Awesome 6 Free"; font-weight: 900; content: "\f48e"; } /* fa-syringe */
+          .icon-ambulance::before { font-family: "Font Awesome 6 Free"; font-weight: 900; content: "\f0f9"; } /* fa-ambulance */
+          /* adjust spacing/size */
+          .icon-syringe::before, .icon-ambulance::before { margin-right: 0.2em; }
+          EOF
+          # ensure the HTML includes this CSS now (insert before </head> too)
+          perl -0777 -pe 's{</head>}{<link rel="stylesheet" href="icons.css" />\n</head>}i' -i docs/index.html || true
+
+      - name: Commit generated docs/ and push
+        env:
+          GIT_AUTHOR_NAME: github-actions
+          GIT_AUTHOR_EMAIL: github-actions@github.com
+        run: |
+          git config user.name "$GIT_AUTHOR_NAME"
+          git config user.email "$GIT_AUTHOR_EMAIL"
+          git add docs || true
+          # If no changes, exit quietly
+          if git diff --cached --quiet; then
+            echo "No changes to commit"
+          else
+            git commit -m "Build HTML output (LaTeXML) and inject icons"
+            git push
+          fi
