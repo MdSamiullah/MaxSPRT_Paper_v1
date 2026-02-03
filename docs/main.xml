@@ -2,7 +2,7 @@
 <?latexml searchpaths="/home/runner/work/MaxSPRT_Paper_v1/MaxSPRT_Paper_v1"?>
 <!--  %https://who-umc.org/research/data-driven-discovery/ --><!--  %the RE required to check/find abbreviations --><!--  %“b(?:[a-z]*[A-Z][a-z]*)–2,˝ --><!--  %yet to address: SAEFVIC, AESI, LLR, CV, IBM, OO programming --><!--  %https://docs.google.com/spreadsheets/d/1JCrWlPveHLAGWnLzogsErOK2XhHBiRfsXtISa3lqxlI/edit#gid=0 : MaxSPRT˙paper˙example˙values --><!--  %%%%%%%%%%%%%%%%%%%%%%% file template.tex %%%%%%%%%%%%%%%%%%%%%%%%% --><!--  %This is a general template file for the LaTeX package SVJour3 --><!--  %for Springer journals.          Springer Heidelberg 2010/09/16 --><!--  %Copy it to a new file with a new name and use it as the basis --><!--  %for your article. Delete % signs as needed. --><!--  %This template includes a few options for different layouts and --><!--  %content for various journals. Please consult a previous issue of --><!--  %your journal as needed. --><!--  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% --><?latexml package="fix-cm"?>
 <?latexml class="svjour3" options="twocolumn"?>
-<?latexml RelaxNGSchema="LaTeXML"?>
+<!--  %**** main.tex Line 25 **** --><?latexml RelaxNGSchema="LaTeXML"?>
 <?latexml package="graphicx"?>
 <?latexml package="multirow"?>
 <?latexml package="amsmath,amssymb,amsfonts"?>
@@ -49,15 +49,17 @@
   <para xml:id="p1">
     <p><!--  %flush right qed marks, e.g. at end of proof --><!--  %**** main.tex Line 75 **** --><!--  %Define BLUE as an alias for standard blue 
      %Define BLUE as an alias for standard blue 
-     %Define BLUE as an alias for standard blue -->∎   
+     %Define BLUE as an alias for standard blue --><!--  %LaTeXML: emit markers (to be replaced automatically by workflow) 
+     %“SetKwInOut–Call˝–Calling Syntax˝ 
+     %“LinesNumbered 
+     %“def“BibTeX––“rm B“kern-.05em–“sc i“kern-.025em b˝“kern-.08em 
+     %T“kern-.1667em“lower.7ex“hbox–E˝“kern-.125emX˝˝ -->∎   
 
 
 
 
 
 
-<!--  %LaTeXML: emit markers (to be replaced automatically by workflow) --><ERROR class="undefined">\SetKwInOut</ERROR><!--  %“LinesNumbered --><!--  %“def“BibTeX––“rm B“kern-.05em–“sc i“kern-.025em b˝“kern-.08em 
-     %T“kern-.1667em“lower.7ex“hbox–E˝“kern-.125emX˝˝ -->CallCalling Syntax
 
 
 
@@ -81,7 +83,8 @@
      %Faculty of Information Technology, Monash University, Wellington Rd, Clayton, VIC-3800, Australia““ 
      %“email–ann.nicholson@monash.edu˝ --><break/><note mark="10" role="email">Jiying.Yin@afsa.gov.au</note>
 </note>
-<!--  %The correct dates will be entered by the editor -->  <title><!--  %“title–Implementation of MaxSPRT in SAEFVIC settings for Poisson data%“thanks–Grants or other notes -->Implementation of a framework to apply Sequential Analysis for Vaccine Safety Surveillance for23 SAEFVIC Dataset<!--  %%about the article that should go on the front page should be 
+<!--  %**** main.tex Line 175 **** 
+     %The correct dates will be entered by the editor -->  <title><!--  %“title–Implementation of MaxSPRT in SAEFVIC settings for Poisson data%“thanks–Grants or other notes -->Implementation of a framework to apply Sequential Analysis for Vaccine Safety Surveillance in SAEFVIC Dataset<!--  %%about the article that should go on the front page should be 
      %%placed here. General acknowledgments should be placed at the end of the article.˝ 
      %˝ --></title>
   <creator role="author">
@@ -91,10 +94,10 @@
     <personname>Jim Buttery</personname>
   </creator>
   <creator before="  " role="author">
-    <personname><!--  %**** main.tex Line 150 **** -->Hazel J. Clothier</personname>
+    <personname>Hazel J. Clothier</personname>
   </creator>
   <creator before="  " role="author">
-    <personname>Jiying Yin</personname>
+    <personname><!--  %**** main.tex Line 150 **** -->Jiying Yin</personname>
   </creator>
   <creator before="  " role="author">
     <personname>John Mallard</personname>
@@ -108,7 +111,7 @@
   <creator before="  " role="author">
     <personname><!--  %Ann E Nicholson            “and -->Gerardo Luis Dimaguila</personname>
   </creator>
-  <date role="creation"><!--  %**** main.tex Line 175 **** -->Received: date / Accepted: date</date>
+  <date role="creation">Received: date / Accepted: date</date>
   <abstract name="Abstract">
 <!--  %Sequential analysis methods have evolved to enhance early detection of rare vaccine-related adverse events while controlling error rates. Traditional SPRT, limited by fixed alternatives and sensitivity to relative risk, led to MaxSPRT, which allows real-time monitoring with composite alternatives using Poisson or Binomial models. CMaxSPRT improves Type I error control under sparse historical data by conditioning on observed events. Alpha spending functions further refine error control across time, and when optimised via linear programming, they minimise time to signal, balance error types, and outperform classical approaches in vaccine safety surveillance. The predictive value and power of controlling Type-I and Type-II error as well as achieving optimized Expected Time To Signal (ETS) and Expected Sample Size to signal (ESS), and the ability to monitor adverse events continuously and in a group manner have made it an emerging technique for vaccine adverse event surveillance. 
      %In this paper, we present a comprehensive framework for implementing sequential analysis on various organizational settings including a generalised data wrangling technique in a spontaneous vaccine safety surveillance system. 
@@ -158,7 +161,7 @@ By conditioning on observed events, the Conditional MaxSPRT (CMaxSPRT) goes one 
     </tags>
     <title><tag close=" ">1</tag>Introduction</title>
     <para xml:id="S1.p1">
-      <p>Vaccines keep us safe against harmful diseases by increasing the natural defence of our body and inducing immunity to various infections <cite class="ltx_citemacro_citep">(<bibref bibrefs="murphy2023trained" separator=";" show="AuthorsPhrase1Year" yyseparator=",">
+      <p><!--  %**** main.tex Line 200 **** -->Vaccines keep us safe against harmful diseases by increasing the natural defence of our body and inducing immunity to various infections <cite class="ltx_citemacro_citep">(<bibref bibrefs="murphy2023trained" separator=";" show="AuthorsPhrase1Year" yyseparator=",">
             <bibrefphrase>, </bibrefphrase>
           </bibref>)</cite>. Every licensed vaccine goes through rigorous testing over numerous trial phases before being approved for use by regulators. Nonetheless, adverse events following immunisation could occur, although they are typically modest and transient, like a painful arm or a low-grade fever. Though relatively rare, more severe side effects may occur. Following approval, vaccine safety surveillance services continue to scan and analyse data from a variety of sources for any signs that a vaccine might have unexpected harmful consequences on health, or an increase in incidence or severity of known reactions, known as post-licensure surveillance.</p>
     </para>
@@ -254,7 +257,7 @@ By conditioning on observed events, the Conditional MaxSPRT (CMaxSPRT) goes one 
           </bibref>)</cite> had previously tabulated, employing group sequential tests with unpredictable sample sizes through alpha spending functions greatly improves statistical power.</p>
     </para>
     <para xml:id="S1.p10">
-      <p>Silva et al.’s extensive guide <cite class="ltx_citemacro_citep">(<bibref bibrefs="r2021exact" separator=";" show="AuthorsPhrase1Year" yyseparator=",">
+      <p><!--  %**** main.tex Line 225 **** -->Silva et al.’s extensive guide <cite class="ltx_citemacro_citep">(<bibref bibrefs="r2021exact" separator=";" show="AuthorsPhrase1Year" yyseparator=",">
             <bibrefphrase>, </bibrefphrase>
           </bibref>)</cite> on planning sample sizes and the alpha spending approach in sequential analysis plays a crucial role in maintaining the desired statistical power. They present detailed methodological insights and introduce optimized alpha spending plans to minimize the expected time to signal (ETS) and expected sample size (ESS). However, while Silva et al.’s work expertly addresses statistical optimizations, building on it, our paper takes a more practical, step-by-step approach tailored for real-world implementation, particularly highlighting common challenges such as data wrangling and preprocessing that arise in operational vaccine safety surveillance systems like SAEFVIC.</p>
     </para>
@@ -371,7 +374,7 @@ By conditioning on observed events, the Conditional MaxSPRT (CMaxSPRT) goes one 
         <tag role="refnum">1</tag>
         <tag role="typerefnum">Figure 1</tag>
       </tags>
-<!--  %**** main.tex Line 250 **** -->      <graphics candidates="figures/Variations_MaxSPRT.pdf" class="ltx_centering" graphic="figures/Variations_MaxSPRT.pdf" options="width=433.62pt,keepaspectratio=true" xml:id="S2.F1.g1"/>
+      <graphics candidates="figures/Variations_MaxSPRT.pdf" class="ltx_centering" graphic="figures/Variations_MaxSPRT.pdf" options="width=433.62pt,keepaspectratio=true" xml:id="S2.F1.g1"/>
       <toccaption class="ltx_centering"><tag close=" ">1</tag>Sequential Analysis: Comparative View Across Parameters and Conditions.</toccaption>
       <caption class="ltx_centering"><tag close=": ">Figure 1</tag>Sequential Analysis: Comparative View Across Parameters and Conditions.</caption>
     </figure>
@@ -475,60 +478,60 @@ Silva et al. further demonstrated that the analytical objective should guide the
 <inline-enumerate xml:id="S2.I2">
           <inline-item xml:id="S2.I2.i1">
             <tags>
-              <tag><!--  %**** main.tex Line 275 **** -->(i)</tag>
-              <tag role="autoref"><!--  %**** main.tex Line 275 **** -->item (i)</tag>
-              <tag role="refnum"><!--  %**** main.tex Line 275 **** -->(i)</tag>
-              <tag role="typerefnum"><!--  %**** main.tex Line 275 **** -->item (i)</tag>
+              <tag>(i)</tag>
+              <tag role="autoref">item (i)</tag>
+              <tag role="refnum">(i)</tag>
+              <tag role="typerefnum">item (i)</tag>
             </tags>
             <text>the grouping of the reports based on age;
 </text>
           </inline-item>
           <inline-item xml:id="S2.I2.i2">
             <tags>
-              <tag><!--  %**** main.tex Line 275 **** -->(ii)</tag>
-              <tag role="autoref"><!--  %**** main.tex Line 275 **** -->item (ii)</tag>
-              <tag role="refnum"><!--  %**** main.tex Line 275 **** -->(ii)</tag>
-              <tag role="typerefnum"><!--  %**** main.tex Line 275 **** -->item (ii)</tag>
+              <tag>(ii)</tag>
+              <tag role="autoref">item (ii)</tag>
+              <tag role="refnum">(ii)</tag>
+              <tag role="typerefnum">item (ii)</tag>
             </tags>
             <text>the decision to use any comparator rate, sources of the comparator rate, the process of calculating the comparator rate;
 </text>
           </inline-item>
           <inline-item xml:id="S2.I2.i3">
             <tags>
-              <tag><!--  %**** main.tex Line 275 **** -->(iii)</tag>
-              <tag role="autoref"><!--  %**** main.tex Line 275 **** -->item (iii)</tag>
-              <tag role="refnum"><!--  %**** main.tex Line 275 **** -->(iii)</tag>
-              <tag role="typerefnum"><!--  %**** main.tex Line 275 **** -->item (iii)</tag>
+              <tag>(iii)</tag>
+              <tag role="autoref">item (iii)</tag>
+              <tag role="refnum">(iii)</tag>
+              <tag role="typerefnum">item (iii)</tag>
             </tags>
             <text>the length of the risk window and the decision to slice or not slice risk windows;
 </text>
           </inline-item>
           <inline-item xml:id="S2.I2.i4">
             <tags>
-              <tag><!--  %**** main.tex Line 275 **** -->(iv)</tag>
-              <tag role="autoref"><!--  %**** main.tex Line 275 **** -->item (iv)</tag>
-              <tag role="refnum"><!--  %**** main.tex Line 275 **** -->(iv)</tag>
-              <tag role="typerefnum"><!--  %**** main.tex Line 275 **** -->item (iv)</tag>
+              <tag>(iv)</tag>
+              <tag role="autoref">item (iv)</tag>
+              <tag role="refnum">(iv)</tag>
+              <tag role="typerefnum">item (iv)</tag>
             </tags>
             <text>using self-controls or other controls;
 </text>
           </inline-item>
           <inline-item xml:id="S2.I2.i5">
             <tags>
-              <tag><!--  %**** main.tex Line 275 **** -->(v)</tag>
-              <tag role="autoref"><!--  %**** main.tex Line 275 **** -->item (v)</tag>
-              <tag role="refnum"><!--  %**** main.tex Line 275 **** -->(v)</tag>
-              <tag role="typerefnum"><!--  %**** main.tex Line 275 **** -->item (v)</tag>
+              <tag>(v)</tag>
+              <tag role="autoref">item (v)</tag>
+              <tag role="refnum">(v)</tag>
+              <tag role="typerefnum">item (v)</tag>
             </tags>
             <text>choosing the unvaccinated population in the concurrent data as comparator;
 </text>
           </inline-item>
           <inline-item xml:id="S2.I2.i6">
             <tags>
-              <tag><!--  %**** main.tex Line 275 **** -->(vi)</tag>
-              <tag role="autoref"><!--  %**** main.tex Line 275 **** -->item (vi)</tag>
-              <tag role="refnum"><!--  %**** main.tex Line 275 **** -->(vi)</tag>
-              <tag role="typerefnum"><!--  %**** main.tex Line 275 **** -->item (vi)</tag>
+              <tag>(vi)</tag>
+              <tag role="autoref">item (vi)</tag>
+              <tag role="refnum">(vi)</tag>
+              <tag role="typerefnum">item (vi)</tag>
             </tags>
             <text>the decision to use the length of exposure and the method to compute it, e.g., using <Math mode="inline" tex="l_{stiwa}" text="l _ (s * t * i * w * a)" xml:id="S2.I2.i6.m1">
                 <XMath>
@@ -550,10 +553,10 @@ Silva et al. further demonstrated that the analytical objective should guide the
           </inline-item>
           <inline-item xml:id="S2.I2.i7">
             <tags>
-              <tag><!--  %**** main.tex Line 275 **** -->(vii)</tag>
-              <tag role="autoref"><!--  %**** main.tex Line 275 **** -->item (vii)</tag>
-              <tag role="refnum"><!--  %**** main.tex Line 275 **** -->(vii)</tag>
-              <tag role="typerefnum"><!--  %**** main.tex Line 275 **** -->item (vii)</tag>
+              <tag>(vii)</tag>
+              <tag role="autoref">item (vii)</tag>
+              <tag role="refnum">(vii)</tag>
+              <tag role="typerefnum">item (vii)</tag>
             </tags>
             <text>the choice of using a test margin <cite class="ltx_citemacro_citep">(<bibref bibrefs="kulldorff2011maximized" separator=";" show="AuthorsPhrase1Year" yyseparator=",">
                   <bibrefphrase>, </bibrefphrase>
@@ -562,10 +565,10 @@ Silva et al. further demonstrated that the analytical objective should guide the
           </inline-item>
           <inline-item xml:id="S2.I2.i8">
             <tags>
-              <tag><!--  %**** main.tex Line 275 **** -->(viii)</tag>
-              <tag role="autoref"><!--  %**** main.tex Line 275 **** -->item (viii)</tag>
-              <tag role="refnum"><!--  %**** main.tex Line 275 **** -->(viii)</tag>
-              <tag role="typerefnum"><!--  %**** main.tex Line 275 **** -->item (viii)</tag>
+              <tag>(viii)</tag>
+              <tag role="autoref">item (viii)</tag>
+              <tag role="refnum">(viii)</tag>
+              <tag role="typerefnum">item (viii)</tag>
             </tags>
             <text>the decision to use a delay adjustment, as well as the ways to calculate the delay adjustment.
 </text>
@@ -676,12 +679,13 @@ Silva et al. further demonstrated that the analytical objective should guide the
                   <tag role="typerefnum">2nd item</tag>
                 </tags>
                 <para xml:id="S2.I3.i4.I1.i2.p1">
-                  <p><text font="italic">Other alternative estimations:</text><!--  %**** main.tex Line 300 **** --> If the CDC’s approach can be replaced by some more reasonable approach that can capture the length of exposure more realistically and effectively.</p>
+                  <p><text font="italic">Other alternative estimations:</text> If the CDC’s approach can be replaced by some more reasonable approach that can capture the length of exposure more realistically and effectively.</p>
                 </para>
               </item>
             </itemize>
           </para>
-<!--  %“item “textbf–Test margin:˝ This is an optional hyperparameter that can be used to fine-tune the estimated expected number of events. For each AESI within each database, the test margins are defined based on comparator rates derived from historical data of the outcome, adjusted for the length of the risk window and a target number of doses required to cause harm. This specification aims to enhance the operating characteristics of the “changed–pMaxSPRT - NOT SURE IF CORRECT NAME IS USED˝ and improve the quality of information available for regulatory decision-making. To perform a one-sided test where the null hypothesis states that the rate of AESI in the vaccinated group is not higher than the historical comparator rate by a specific test margin ($m$), where $m$ is a non-negative value stated as a percent of the comparator rate. 
+<!--  %**** main.tex Line 300 **** 
+     %“item “textbf–Test margin:˝ This is an optional hyperparameter that can be used to fine-tune the estimated expected number of events. For each AESI within each database, the test margins are defined based on comparator rates derived from historical data of the outcome, adjusted for the length of the risk window and a target number of doses required to cause harm. This specification aims to enhance the operating characteristics of the “changed–pMaxSPRT - NOT SURE IF CORRECT NAME IS USED˝ and improve the quality of information available for regulatory decision-making. To perform a one-sided test where the null hypothesis states that the rate of AESI in the vaccinated group is not higher than the historical comparator rate by a specific test margin ($m$), where $m$ is a non-negative value stated as a percent of the comparator rate. 
      %“changed–Hence, the choice of using it or not using it makes another fold of variations in MaxSPRT calculation and our implementation˝, and of course, needs an assessment to determine which one is a better choice: using it or not using it. Moreover, in the case of using it, finding the optimal value of the test margin is also a challenge. -->        </item>
         <item xml:id="S2.I3.i5">
           <tags>
@@ -806,8 +810,7 @@ Silva et al. further demonstrated that the analytical objective should guide the
     <para xml:id="S3.p4">
       <p>To aid readability and implementation, we list the terminologies used in the literature to construct the narrative of the paper clearly. Table <ref labelref="LABEL:table:notation"/> enlists the terms, their notations, and symbols that are commonly used throughout the paper. We refer to Appendix <ref labelref="LABEL:sec:Terminology"/> for the definitions, examples, and explanations of the terms.</p>
     </para>
-<!--  %**** main.tex Line 325 **** 
-     %“added–SHOULD I ADD alpha, alpha spending function, Beta, statistical power, significance...˝ -->    <table inlist="lot" labels="LABEL:table:notation" placement="tb" xml:id="S3.T1">
+<!--  %“added–SHOULD I ADD alpha, alpha spending function, Beta, statistical power, significance...˝ -->    <table inlist="lot" labels="LABEL:table:notation" placement="tb" xml:id="S3.T1">
       <tags>
         <tag>Table 1</tag>
         <tag role="autoref">Table 1</tag>
@@ -992,7 +995,7 @@ Silva et al. further demonstrated that the analytical objective should guide the
       </tags>
       <title><tag close=" ">3.1</tag>Properties of the Dataset</title>
       <para xml:id="S3.SS1.p1">
-        <p>SAEFVIC (a Surveillance of Adverse Events Following Vaccination in the Community) data <cite class="ltx_citemacro_citep">(<bibref bibrefs="clothier2017evaluation" separator=";" show="AuthorsPhrase1Year" yyseparator=",">
+        <p><!--  %**** main.tex Line 350 **** -->SAEFVIC (a Surveillance of Adverse Events Following Vaccination in the Community) data <cite class="ltx_citemacro_citep">(<bibref bibrefs="clothier2017evaluation" separator=";" show="AuthorsPhrase1Year" yyseparator=",">
               <bibrefphrase>, </bibrefphrase>
             </bibref>)</cite> is a set of timely passive surveillance data consisting of AEFI reports submitted by vaccinees, their relatives, GPs, nurses, or other healthcare professionals. It aligns to the minimum data for AEFI surveillance as per WHO <cite class="ltx_citemacro_citep">(<bibref bibrefs="world2014global" separator=";" show="AuthorsPhrase1Year" yyseparator=",">
               <bibrefphrase>, </bibrefphrase>
@@ -1206,7 +1209,7 @@ Silva et al. further demonstrated that the analytical objective should guide the
           </Math> (Log-likelihood Ratio), which is used to detect a signal in Sequential analysis and MaxSPRT. Throughout the paper, we use a sample SAEFVIC dataset for a particular vaccine and ”Abdominal pain” as an AEFI as a running example to demonstrate the calculations.</p>
       </para>
       <para xml:id="S3.SS2.p2">
-        <p><!--  %**** main.tex Line 375 **** -->Refer to Appendix <ref labelref="LABEL:Implementation"/> (Implementation) for full details of each step, particularly during a MaxSPRT implementation in the SAEFVIC setting.</p>
+        <p>Refer to Appendix <ref labelref="LABEL:Implementation"/> (Implementation) for full details of each step, particularly during a MaxSPRT implementation in the SAEFVIC setting.</p>
       </para>
       <subsubsection inlist="toc" labels="LABEL:subsubsection:cumulativeObservedNumOfEvents" xml:id="S3.SS2.SSS1">
         <tags>
@@ -2098,11 +2101,17 @@ Silva et al. further demonstrated that the analytical objective should guide the
             <tag role="refnum">5</tag>
             <tag role="typerefnum">Table 5</tag>
           </tags>
-<!--  %**** main.tex Line 450 **** -->          <toccaption class="ltx_centering"><tag close=" "><!--  %“begin–adjustbox˝–width=“textwidth˝ -->5<!--  %“begin–adjustbox˝–width=“textwidth˝ 
+          <toccaption class="ltx_centering"><tag close=" "><!--  %**** main.tex Line 450 **** -->5<!--  %“begin–adjustbox˝–width=“textwidth˝ 
+     %**** main.tex Line 450 **** 
      %“begin–adjustbox˝–width=“textwidth˝ 
+     %**** main.tex Line 450 **** 
      %“begin–adjustbox˝–width=“textwidth˝ 
+     %**** main.tex Line 450 **** 
      %“begin–adjustbox˝–width=“textwidth˝ 
-     %“begin–adjustbox˝–width=“textwidth˝ --></tag><!--  %“begin–adjustbox˝–width=“textwidth˝ -->Demonstration of Reporting delay distribution &amp; computing <Math mode="inline" tex="p(s,t)" text="p * open-interval@(s, t)" xml:id="S3.T5.m1">
+     %**** main.tex Line 450 **** 
+     %“begin–adjustbox˝–width=“textwidth˝ 
+     %**** main.tex Line 450 **** 
+     %“begin–adjustbox˝–width=“textwidth˝ --></tag><!--  %**** main.tex Line 450 **** -->Demonstration of Reporting delay distribution &amp; computing <!--  %“begin–adjustbox˝–width=“textwidth˝ --><Math mode="inline" tex="p(s,t)" text="p * open-interval@(s, t)" xml:id="S3.T5.m1">
               <XMath>
                 <XMApp>
                   <XMTok meaning="times" role="MULOP">⁢</XMTok>
@@ -2124,8 +2133,12 @@ Silva et al. further demonstrated that the analytical objective should guide the
                 </XMApp>
               </XMath>
             </Math> for Abdominal Pain</toccaption>
-          <caption class="ltx_centering"><tag close=": ">Table 5</tag><!--  %“begin–adjustbox˝–width=“textwidth˝ 
-     %“begin–adjustbox˝–width=“textwidth˝ -->Demonstration of Reporting delay distribution &amp; computing <!--  %“begin–adjustbox˝–width=“textwidth˝ 
+          <caption class="ltx_centering"><tag close=": ">Table 5</tag><!--  %**** main.tex Line 450 **** 
+     %“begin–adjustbox˝–width=“textwidth˝ 
+     %**** main.tex Line 450 **** 
+     %“begin–adjustbox˝–width=“textwidth˝ -->Demonstration of Reporting delay distribution &amp; computing <!--  %**** main.tex Line 450 **** 
+     %“begin–adjustbox˝–width=“textwidth˝ 
+     %**** main.tex Line 450 **** 
      %“begin–adjustbox˝–width=“textwidth˝ --><Math mode="inline" tex="p(s,t)" text="p * open-interval@(s, t)" xml:id="S3.T5.m2">
               <XMath>
                 <XMApp>
@@ -2409,7 +2422,7 @@ Silva et al. further demonstrated that the analytical objective should guide the
               </bibref>)</cite> and defined in Definition <ref labelref="LABEL:defn:ApproximateExpCount"/> as “Approximate Expected number of events” in Appendix <ref labelref="LABEL:sec:Terminology"/>.</p>
         </para>
         <para xml:id="S3.SS2.SSS5.p2">
-          <p>In passive surveillance or reporting systems, such as SAEFVIC, we do not have dose administration information in real time. In such systems, only the numerator that is the report count are available. Therefore, in this paper and in our current implementation, we focused on <Math mode="inline" tex="l_{stiwa}" text="l _ (s * t * i * w * a)" xml:id="S3.SS2.SSS5.p2.m1">
+          <p><!--  %**** main.tex Line 475 **** -->In passive surveillance or reporting systems, such as SAEFVIC, we do not have dose administration information in real time. In such systems, only the numerator that is the report count are available. Therefore, in this paper and in our current implementation, we focused on <Math mode="inline" tex="l_{stiwa}" text="l _ (s * t * i * w * a)" xml:id="S3.SS2.SSS5.p2.m1">
               <XMath>
                 <XMApp>
                   <XMTok role="SUBSCRIPTOP" scriptpos="post1"/>
@@ -2996,7 +3009,7 @@ Silva et al. further demonstrated that the analytical objective should guide the
             </XMath>
           </Math> calculation</title>
         <para xml:id="S3.SS2.SSS8.p1">
-          <p><!--  %**** main.tex Line 500 **** -->To calculate the ratio for calculating <Math mode="inline" tex="p(s,t)" text="p * open-interval@(s, t)" xml:id="S3.SS2.SSS8.p1.m1">
+          <p>To calculate the ratio for calculating <Math mode="inline" tex="p(s,t)" text="p * open-interval@(s, t)" xml:id="S3.SS2.SSS8.p1.m1">
               <XMath>
                 <XMApp>
                   <XMTok meaning="times" role="MULOP">⁢</XMTok>
@@ -3509,7 +3522,7 @@ Silva et al. further demonstrated that the analytical objective should guide the
                 <td align="center" border="r t">91.9</td>
               </tr>
               <tr>
-                <td align="center" border="l r t" thead="row"><!--  %**** main.tex Line 525 **** -->5</td>
+                <td align="center" border="l r t" thead="row">5</td>
                 <td align="center" border="r t" thead="row">346</td>
                 <td align="center" border="r t">81.31</td>
                 <td align="center" border="r t">0.93</td>
@@ -3517,7 +3530,7 @@ Silva et al. further demonstrated that the analytical objective should guide the
                 <td align="center" border="r t">167.52</td>
               </tr>
               <tr>
-                <td align="center" border="l r t" thead="row">6</td>
+                <td align="center" border="l r t" thead="row"><!--  %**** main.tex Line 525 **** -->6</td>
                 <td align="center" border="r t" thead="row">96</td>
                 <td align="center" border="r t">22.56</td>
                 <td align="center" border="r t">0.9</td>
@@ -3949,7 +3962,7 @@ Silva et al. further demonstrated that the analytical objective should guide the
                 <td align="center" border="r t">No</td>
               </tr>
               <tr>
-                <td align="center" border="l r t"><!--  %**** main.tex Line 550 **** -->6</td>
+                <td align="center" border="l r t">6</td>
                 <td align="center" border="r t">6</td>
                 <td align="center" border="r t">20.3</td>
                 <td align="center" border="r t">19</td>
@@ -3961,7 +3974,7 @@ Silva et al. further demonstrated that the analytical objective should guide the
                 <td align="center" border="r t">No</td>
               </tr>
               <tr>
-                <td align="center" border="l r t">7</td>
+                <td align="center" border="l r t"><!--  %**** main.tex Line 550 **** -->7</td>
                 <td align="center" border="r t">7</td>
                 <td align="center" border="r t">11.46</td>
                 <td align="center" border="r t">24</td>
@@ -4100,7 +4113,8 @@ Silva et al. further demonstrated that the analytical objective should guide the
               </XMath>
             </Math>), statistical power, the minimum number of events, the observed number of events, and the expected number of events. Calculation of the expected number of events is highlighted in the paper. To aid the readers, we briefly introduced those terms in Appendix <ref labelref="LABEL:MaxSPRTParams"/>.</p>
         </para>
-<!--  %“subsection–“added–MaxSPRT Parameters and use of Sequential Package˝˝“label–subsec:MaxSPRT˙Param˙Use˙SeqPackage˝ 
+<!--  %**** main.tex Line 575 **** 
+     %“subsection–“added–MaxSPRT Parameters and use of Sequential Package˝˝“label–subsec:MaxSPRT˙Param˙Use˙SeqPackage˝ 
      %ADD CONTENTS ... ... ... -->      </subsubsection>
     </subsection>
     <subsection inlist="toc" labels="LABEL:MaxSPRTParams" xml:id="S3.SS3">
@@ -4205,7 +4219,7 @@ The expected time (or information accrual point) expressed in terms of the numbe
           </Math> is a positive number used for the power-type alpha spending function.</p>
       </para>
       <para class="ltx_noindent" xml:id="S3.SS3.p7">
-        <p><!--  %**** main.tex Line 600 **** -->Statistical power measures the probability of identifying the risk if it is truly present. It focuses on controlling Type-II errors and is influenced by sample size and significance level.<!--  %“changed–TYPE II ERROR RATE SHOULD BE ADDED? - “textbf–Statistical Power: ALSO NEED TO CHECK AS PER REVIEW AND STANDARD PRACTICE˝˝ --><break/></p>
+        <p><!--  %“changed–TYPE II ERROR RATE SHOULD BE ADDED? - “textbf–Statistical Power: ALSO NEED TO CHECK AS PER REVIEW AND STANDARD PRACTICE˝˝ -->Statistical power measures the probability of identifying the risk if it is truly present. It focuses on controlling Type-II errors and is influenced by sample size and significance level.<!--  %**** main.tex Line 600 **** --><break/></p>
       </para>
       <para class="ltx_noindent" xml:id="S3.SS3.p8">
         <p><text font="bold">Relative risk:</text>
@@ -4692,7 +4706,7 @@ The equation in the definition takes into account several parameters, such as <M
                           <XMApp>
                             <XMTok role="SUPERSCRIPTOP" scriptpos="mid1"/>
                             <XMTok mathstyle="display" meaning="sum" role="SUMOP" scriptpos="mid">∑</XMTok>
-<!--  %**** main.tex Line 625 **** -->                            <XMTok font="italic" fontsize="70%" role="UNKNOWN">s</XMTok>
+                            <XMTok font="italic" fontsize="70%" role="UNKNOWN">s</XMTok>
                           </XMApp>
                           <XMApp>
                             <XMTok fontsize="70%" meaning="equals" role="RELOP">=</XMTok>
@@ -4756,7 +4770,7 @@ The equation in the definition takes into account several parameters, such as <M
                       </XMApp>
                     </XMApp>
                   </XMath>
-                </Math></p>
+                </Math><!--  %**** main.tex Line 625 **** --></p>
             </para>
           </item>
         </enumerate>
@@ -5012,7 +5026,7 @@ The equation in the definition takes into account several parameters, such as <M
         <p>Deciding whether to use age stratification or not, and if used, choosing between static grouping or dynamic binning technique adds to the challenge. Moreover, in the case of static grouping, deciding which grouping would give us optimal and more indicative results is not known and is subject to empirical analysis. In the case of either type of grouping, calculating the background rates for each age group also adds another layer of difficulty.</p>
       </para>
       <para xml:id="S4.SS1.p6">
-        <p><!--  %**** main.tex Line 675 **** -->Interestingly, the data source and technique to calculate the background rates add some variations and thus, additional challenges are introduced. Data properties and characteristics, such as the distribution of the data, also increase complexity in the implementation. One of the significant inherent challenges in any process involving data is missing values. In the case of MaxSPRT analysis, missing information in the data needs special consideration. We handled the missing data with great care, explained in Appendix <ref labelref="LABEL:subsec:Preprocessing"/>.</p>
+        <p>Interestingly, the data source and technique to calculate the background rates add some variations and thus, additional challenges are introduced. Data properties and characteristics, such as the distribution of the data, also increase complexity in the implementation. One of the significant inherent challenges in any process involving data is missing values. In the case of MaxSPRT analysis, missing information in the data needs special consideration. We handled the missing data with great care, explained in Appendix <ref labelref="LABEL:subsec:Preprocessing"/>.</p>
       </para>
       <para xml:id="S4.SS1.p7">
         <p>We also had to deal with some challenges regarding the selection of the development and implementation tool and setting up the environment. We explained the issue in detail with our workaround in Appendix <ref labelref="LABEL:subsec:SetupEnvironment"/>.</p>
@@ -5058,7 +5072,7 @@ The equation in the definition takes into account several parameters, such as <M
       <p><text font="bold">Funding</text> This research was part of a program of work enabled by a generous grant from the Royal Children’s Hospital Foundation to the Centre for Health Analytics, Melbourne Children’s Campus.<break/></p>
     </para>
     <para class="ltx_noindent" xml:id="Sx2.p3">
-      <p><text font="bold">Conflicts of Interest/Competing Interests</text> None to mention.<break/></p>
+<!--  %**** main.tex Line 700 **** -->      <p><text font="bold">Conflicts of Interest/Competing Interests</text> None to mention.<break/></p>
     </para>
     <para class="ltx_noindent" xml:id="Sx2.p4">
       <p><text font="bold">Ethics Approval</text> This paper does not require ethics approval.<break/></p>
@@ -5082,7 +5096,7 @@ The equation in the definition takes into account several parameters, such as <M
       <p>Funding acquisition: Buttery<break/></p>
     </para>
     <para class="ltx_noindent" xml:id="Sx2.p11">
-<!--  %**** main.tex Line 725 **** -->      <p>Investigation: Samiullah, Clothier, Yin, Munakabayo, Kattan, Mallard<break/></p>
+      <p><!--  %**** main.tex Line 725 **** -->Investigation: Samiullah, Clothier, Yin, Munakabayo, Kattan, Mallard<break/></p>
     </para>
     <para class="ltx_noindent" xml:id="Sx2.p12">
       <p>Methodology: Samiullah<break/></p>
@@ -5113,7 +5127,7 @@ The equation in the definition takes into account several parameters, such as <M
     <title><tag close=" ">Appendix A</tag>Terminology</title>
     <toctitle><tag close=" ">A</tag>Terminology</toctitle>
     <para xml:id="A1.p1">
-      <p>We refer the interested reader to <cite class="ltx_citemacro_cite"><bibref bibrefs="silva2015continuous" separator=";" show="Authors Phrase1YearPhrase2" yyseparator=",">
+      <p><!--  %**** main.tex Line 750 **** -->We refer the interested reader to <cite class="ltx_citemacro_cite"><bibref bibrefs="silva2015continuous" separator=";" show="Authors Phrase1YearPhrase2" yyseparator=",">
             <bibrefphrase>(</bibrefphrase>
             <bibrefphrase>)</bibrefphrase>
           </bibref></cite> and <cite class="ltx_citemacro_cite"><bibref bibrefs="silva2019alpha" separator=";" show="Authors Phrase1YearPhrase2" yyseparator=",">
@@ -5367,7 +5381,7 @@ Let <Math mode="inline" tex="s" text="s" xml:id="Thmdefinition4.p1.m1">
       </para>
     </theorem>
     <para xml:id="A1.p4">
-      <p>In other words, exposed weeks of a vaccinee are the weeks after a dose is administered to the person until the reaction/AEFI is observed on them.</p>
+      <p><!--  %**** main.tex Line 775 **** -->In other words, exposed weeks of a vaccinee are the weeks after a dose is administered to the person until the reaction/AEFI is observed on them.</p>
     </para>
     <para xml:id="A1.p5">
       <p>As an example, if someone gets a dose on week-2 of the study period, and the risk window is 4 weeks or 28 days, then <Math mode="inline" tex="2^{nd}" text="2 ^ (n * d)" xml:id="A1.p5.m1">
@@ -5711,11 +5725,11 @@ Let a vaccinee <Math mode="inline" tex="V" text="V" xml:id="Thmdefinition6.p1.m1
             <td align="left" border="r t">1-42 days</td>
           </tr>
           <tr>
-            <td align="left" border="l r t"><!--  %**** main.tex Line 800 **** -->Bell’s palsy</td>
+            <td align="left" border="l r t">Bell’s palsy</td>
             <td align="left" border="r t">1-42 days</td>
           </tr>
           <tr>
-            <td align="left" border="l r t">Anaphylaxis</td>
+            <td align="left" border="l r t"><!--  %**** main.tex Line 800 **** -->Anaphylaxis</td>
             <td align="left" border="r t">0-1 day</td>
           </tr>
           <tr>
@@ -5864,7 +5878,7 @@ Let <Math mode="inline" tex="s" text="s" xml:id="Thmdefinition7.p1.m1">
       </para>
     </theorem>
     <para xml:id="A1.p8">
-      <p>It is required for calculating the expected number of events, <Math mode="inline" tex="\mu_{s}" text="mu _ s" xml:id="A1.p8.m1">
+      <p><!--  %**** main.tex Line 825 **** -->It is required for calculating the expected number of events, <Math mode="inline" tex="\mu_{s}" text="mu _ s" xml:id="A1.p8.m1">
           <XMath>
             <XMApp>
               <XMTok role="SUBSCRIPTOP" scriptpos="post1"/>
@@ -6745,7 +6759,7 @@ let <Math mode="inline" tex="s" text="s" xml:id="Thmdefinition8.p1.m1">
                       <XMTok font="italic" role="UNKNOWN">W</XMTok>
                     </XMApp>
                   </XMath>
-                </Math><!--  %**** main.tex Line 850 **** --> is the risk window length, expressed in the number of weeks,</p>
+                </Math> is the risk window length, expressed in the number of weeks,</p>
             </para>
           </item>
           <item xml:id="A1.I1.i7">
@@ -6811,7 +6825,7 @@ let <Math mode="inline" tex="s" text="s" xml:id="Thmdefinition8.p1.m1">
                       <XMTok meaning="1" role="NUMBER">1</XMTok>
                     </XMApp>
                   </XMath>
-                </Math> week in the study and 1st exposed week for the vaccinee,</p>
+                </Math><!--  %**** main.tex Line 850 **** --> week in the study and 1st exposed week for the vaccinee,</p>
             </para>
           </item>
           <item xml:id="A1.I1.i8">
@@ -7095,7 +7109,7 @@ The number of events that occurred under the risk window in week <Math mode="inl
       </tags>
       <title font="bold"><tag>Definition 11</tag></title>
       <para xml:id="Thmdefinition11.p1">
-        <p><text font="bold">Historical comparator rate:</text><!--  %**** main.tex Line 875 **** -->
+        <p><text font="bold">Historical comparator rate:</text>
 Let a MaxSPRT analysis be performed for an AEFI due to a vaccine. Say, in previous <Math mode="inline" tex="y" text="y" xml:id="Thmdefinition11.p1.m1">
             <XMath>
               <XMTok font="italic" role="UNKNOWN">y</XMTok>
@@ -7127,7 +7141,7 @@ Let a MaxSPRT analysis be performed for an AEFI due to a vaccine. Say, in previo
           </Math>.</p>
       </para>
     </theorem>
-    <para xml:id="A1.p15">
+<!--  %**** main.tex Line 875 **** -->    <para xml:id="A1.p15">
       <p>It is the value in person-time unit required to calculate the expected number of events, <Math mode="inline" tex="\mu_{s}" text="mu _ s" xml:id="A1.p15.m1">
           <XMath>
             <XMApp>
@@ -7538,7 +7552,7 @@ Let <Math mode="inline" tex="s" text="s" xml:id="Thmdefinition14.p1.m1">
           </Math>.</p>
       </para>
     </theorem>
-<!--  %**** main.tex Line 900 **** -->    <para xml:id="A1.p18">
+    <para xml:id="A1.p18">
       <p>As an example, at week <Math mode="inline" tex="s" text="s" xml:id="A1.p18.m1">
           <XMath>
             <XMTok font="italic" role="UNKNOWN">s</XMTok>
@@ -7862,7 +7876,7 @@ Let <Math mode="inline" tex="s" text="s" xml:id="Thmdefinition16.p1.m1">
           </XMath>
         </Math>, we have to simply accumulate the number of events occurring weekly.</p>
     </para>
-<!--  %**** main.tex Line 925 **** -->    <theorem class="ltx_theorem_definition" labels="LABEL:defn:llr" xml:id="Thmdefinition17">
+    <theorem class="ltx_theorem_definition" labels="LABEL:defn:llr" xml:id="Thmdefinition17">
       <tags>
         <tag>Definition 17</tag>
         <tag role="autoref">17</tag>
@@ -7871,7 +7885,7 @@ Let <Math mode="inline" tex="s" text="s" xml:id="Thmdefinition16.p1.m1">
       </tags>
       <title font="bold"><tag>Definition 17</tag></title>
       <para xml:id="Thmdefinition17.p1">
-        <p><text font="bold">Log-likelihood ratio:</text>
+        <p><text font="bold">Log-likelihood ratio:</text><!--  %**** main.tex Line 925 **** -->
 Let <Math mode="inline" tex="s" text="s" xml:id="Thmdefinition17.p1.m1">
             <XMath>
               <XMTok font="italic" role="UNKNOWN">s</XMTok>
@@ -8653,7 +8667,7 @@ Let <Math mode="inline" tex="s" text="s" xml:id="Thmdefinition18.p1.m1">
         <p>SAEFVIC data are prepared prior to processing. The pre-processing involves de-identification, noise handling, and missing data management. We have used the features of the MaxSPRT framework to deal with the pre-preprocessing challenges, especially, the missing data management. We allow analysers to opt-in methods to fill in missing values with some appropriate alternative values or simply discard the rows/records with missing values.</p>
       </para>
       <para xml:id="A2.SS1.p2">
-        <p><!--  %**** main.tex Line 975 **** -->To justify filling in missing values, which is questionable from the point of view of epidemiology, this is logical from a data analysis perspective in certain scenarios. As an example, if we discard the records for some missing values in gender but the gender-specific stratification is not required in the calculation or analysis, then removing that record is not worthwhile. Rather, discarding the value adds bias to the numerator and denominator calculations. However, it is up to the user of the framework to decide whether to use the filling-in method or not.</p>
+        <p>To justify filling in missing values, which is questionable from the point of view of epidemiology, this is logical from a data analysis perspective in certain scenarios. As an example, if we discard the records for some missing values in gender but the gender-specific stratification is not required in the calculation or analysis, then removing that record is not worthwhile. Rather, discarding the value adds bias to the numerator and denominator calculations. However, it is up to the user of the framework to decide whether to use the filling-in method or not.</p>
       </para>
       <para xml:id="A2.SS1.p3">
         <p>We first de-identify the data to preserve the privacy of the reporters and vaccinees. In the framework, we allow for the de-identification of the data, which is quite straightforward, by removing all demographics and identifiable information about the vaccine and the reporter. The analyser can also mention if any further information needs to be removed for the de-identification other than the demographics. In the de-identification process, we assign a unique identifier to each report for record-keeping purposes. We keep the columns as specified in Table <ref labelref="LABEL:table:sampleDataDemonstration"/>.</p>
@@ -9598,7 +9612,7 @@ Let <Math mode="inline" tex="s" text="s" xml:id="Thmdefinition18.p1.m1">
             </tr>
           </tbody>
         </tabular>
-<!--  %**** main.tex Line 1025 **** -->      </table>
+      </table>
       <table inlist="lot" labels="LABEL:table:RiskControlUnVaxDemonstration" placement="!htb" xml:id="A2.T10">
         <tags>
           <tag>Table 10</tag>
@@ -9772,13 +9786,13 @@ Let <Math mode="inline" tex="s" text="s" xml:id="Thmdefinition18.p1.m1">
             </tr>
             <tr>
               <td border="l r t" thead="row"/>
-              <td align="left" border="r t" thead="row"><text font="bold"><!--  %**** main.tex Line 1050 **** -->Risk Person-days</text></td>
+              <td align="left" border="r t" thead="row"><text font="bold">Risk Person-days</text></td>
               <td align="center" border="r t" colspan="7">12</td>
               <td align="center" border="r t" colspan="7">28</td>
               <td align="center" border="r t" colspan="7">13</td>
             </tr>
             <tr>
-              <td align="center" backgroundcolor="#F2EBEB" border="l r tt" thead="row"><text backgroundcolor="#F2EBEB" font="bold">ICON-AMBULANCE</text></td>
+              <td align="center" backgroundcolor="#F2EBEB" border="l r tt" thead="row"><text backgroundcolor="#F2EBEB" font="bold"><!--  %**** main.tex Line 1050 **** -->ICON-AMBULANCE</text></td>
               <td align="left" border="r tt" thead="row"><text font="bold">Control events</text></td>
               <td align="center" border="r tt" colspan="7">0</td>
               <td align="center" border="r tt" colspan="7">2</td>
@@ -9818,8 +9832,8 @@ Let <Math mode="inline" tex="s" text="s" xml:id="Thmdefinition18.p1.m1">
       </tags>
       <title><tag close=" ">B.2</tag>Processing of SAEFVIC Data</title>
       <para xml:id="A2.SS2.p1">
-        <p><!--  %**** main.tex Line 1075 **** -->After the preprocessing of data, we started calculating the metrics that are required to perform MaxSPRT analysis and detect signals. The analysis is required to be performed in a well-defined frame of weeks for the sake of tracking the computation and facilitating weekly analysis. As a next step, we need a set of continuous windows in the analysis, where the data is divided into different windows of weeks based on their occurrence dates. Our implementation does not rely on any explicit length of the analysis or size of the data frame, or count of windows in the data frame. Moreover, our current implementation allows the analysers or epidemiologists to set their preferred start date, end date, length of analysis or count of windows in the frame.
-<!--  %summary% --></p>
+        <p><!--  %summary% -->After the preprocessing of data, we started calculating the metrics that are required to perform MaxSPRT analysis and detect signals. The analysis is required to be performed in a well-defined frame of weeks for the sake of tracking the computation and facilitating weekly analysis. As a next step, we need a set of continuous windows in the analysis, where the data is divided into different windows of weeks based on their occurrence dates. Our implementation does not rely on any explicit length of the analysis or size of the data frame, or count of windows in the data frame. Moreover, our current implementation allows the analysers or epidemiologists to set their preferred start date, end date, length of analysis or count of windows in the frame.
+<!--  %**** main.tex Line 1075 **** --></p>
       </para>
       <para xml:id="A2.SS2.p2">
         <p>In this task, the main challenge was to take the starting date of the first week. Then the formation of the windows was quite straightforward. The first window was formed by adding 7 days to the start date of the analysis. This gives us another date. Hence, our windows are defined by the start and end date of the week (does not matter what day of the week it is). Then, adding 1 to the last date of the first week gives us the first date of the second week. We make a set of windows each of 7 days or 1 week long by continuously following the steps. A point worth noting is that the start date of analysis is by default taken from the data by finding the earliest vaccination date. This can also be replaced by the earliest report date or report submission date. On the other hand, the frame ends with a week having an end date that is not later than six days from the latest date of reporting found in the data. Hence, our implementation does not rely on any explicit length of the analysis, the size of the data frame, or the count of windows in the data frame. Moreover, our current implementation allows analysts or epidemiologists to set their preferred start date, end date, length of analysis, or count of windows in the frame.</p>
