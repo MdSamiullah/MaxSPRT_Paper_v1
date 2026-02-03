@@ -79,6 +79,15 @@
 \newcommand{\added}[1]{\textcolor{blue}{#1}}
 \newcommand{\changed}[1]{\textcolor{green}{#1}}
 
+\ifdefined\HCode
+  % HTML (LaTeXML)
+  \newcommand{\syringeicon}{��}
+  \newcommand{\ambulanceicon}{��}
+\else
+  % PDF (LaTeX)
+  \newcommand{\syringeicon}{\fasyringe}
+  \newcommand{\ambulanceicon}{\faAmbulance}
+\fi
 
 \SetKwInOut{Call}{Calling Syntax}
 
