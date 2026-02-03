@@ -81,18 +81,18 @@
 
 \usepackage{fontawesome5}
 
-\newcommand{\syringeicon}{\fasyringe}
-\newcommand{\ambulanceicon}{\faAmbulance}
+%\newcommand{\syringeicon}{\fasyringe}
+%\newcommand{\ambulanceicon}{\faAmbulance}
 
 % HTML (LaTeXML)
 \ifdefined\HCode
   \renewcommand{\syringeicon}{<span class="icon-syringe"></span>}
-  \renewcommand{\ambulanceicon}{<span class="icon-syringe"></span>}
+  \renewcommand{\ambulanceicon}{<span class="icon-ambulance"></span>}
 \fi
 
 \ifdefined\latexml
   \renewcommand{\syringeicon}{<span class="icon-syringe"></span>}
-  \renewcommand{\ambulanceicon}{<span class="icon-syringe"></span>}
+  \renewcommand{\ambulanceicon}{<span class="icon-ambulance"></span>}
 \fi
 
 \SetKwInOut{Call}{Calling Syntax}
